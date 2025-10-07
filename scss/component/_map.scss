@@ -1,0 +1,26 @@
+.map-box {
+    width: 409px;
+    height: 409px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    .marker {
+        background-image: url("../images/items/marker.png");
+        background-size: cover;
+        width: 35px;
+        height: 50px;
+        cursor: pointer;
+    }
+}
+
+.mapboxgl-ctrl-attrib a,
+.mapboxgl-ctrl-attrib.mapboxgl-compact,
+a.mapboxgl-ctrl-logo {
+    display: none !important;
+}
