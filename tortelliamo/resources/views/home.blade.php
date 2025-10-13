@@ -120,9 +120,16 @@
                             </div>
                             <p class="desc wow fadeInUp">
                                 Siamo un'attività familiare che porta avanti la tradizione gastronomica di Novellara.
-                                Ogni giorno prepariamo pasta fresca e specialità seguendo le antiche ricette emiliane,
-                                utilizzando solo ingredienti di prima qualità.
+                                La nostra passione per la cucina emiliana ci ha spinto a creare un luogo dove i sapori
+                                autentici del territorio possono essere apprezzati da tutti, mantenendo vive le ricette
+                                tramandate di generazione in generazione.
                             </p>
+                        </div>
+                        <div class="wrap-image hover-img right wow fadeInRight" data-wow-duration="2s">
+                            <img class="lazyload" 
+                                 data-src="{{ asset('images/nuove/lasagna.png') }}"
+                                 src="{{ asset('images/nuove/lasagna.png') }}" 
+                                 alt="Lasagna" />
                         </div>
                     </div>
                 </div>
@@ -159,6 +166,7 @@
                 </div>
                 <div class="swiper-container slide-our-menu">
                     <div class="swiper-wrapper">
+                        <!-- Slide 1: Pasta Fresca -->
                         <div class="swiper-slide">
                             <div class="our-menu-item hover-img wow fadeInUp">
                                 <div class="wrap-image">
@@ -174,6 +182,55 @@
                                             La nostra pasta fresca è preparata quotidianamente seguendo le ricette 
                                             tradizionali emiliane, con ingredienti selezionati e di prima qualità.
                                         </p>
+                                        <div class="icon">
+                                            <a href="#"><i class="icon-arrow-draw"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2: Primi Piatti -->
+                        <div class="swiper-slide">
+                            <div class="our-menu-item hover-img wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="wrap-image">
+                                    <img class="lazyload" 
+                                         data-src="{{ asset('images/nuove/primi_piatti.png') }}"
+                                         src="{{ asset('images/nuove/primi_piatti.png') }}" 
+                                         alt="Primi Piatti" />
+                                </div>
+                                <div class="content">
+                                    <div class="wrap">
+                                        <div class="title"><a href="#">PRIMI PIATTI</a></div>
+                                        <p>
+                                            Lasagne, cannelloni e altre specialità pronte da cuocere, preparate secondo 
+                                            le ricette della tradizione emiliana con ingredienti genuini.
+                                        </p>
+                                        <div class="icon">
+                                            <a href="#"><i class="icon-arrow-draw"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3: Specialità Gastronomiche -->
+                        <div class="swiper-slide">
+                            <div class="our-menu-item hover-img mb-0 wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="wrap-image">
+                                    <img class="lazyload" 
+                                         data-src="{{ asset('images/nuove/specialita_gastronomiche.png') }}"
+                                         src="{{ asset('images/nuove/specialita_gastronomiche.png') }}" 
+                                         alt="Specialità Gastronomiche" />
+                                </div>
+                                <div class="content">
+                                    <div class="wrap">
+                                        <div class="title"><a href="#">SPECIALITÀ GASTRONOMICHE</a></div>
+                                        <p>
+                                            Piatti pronti, secondi e contorni della tradizione emiliana, preparati con 
+                                            cura e passione per soddisfare anche i palati più esigenti.
+                                        </p>
+                                        <div class="icon">
+                                            <a href="#"><i class="icon-arrow-draw"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -181,6 +238,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="item1 wow fadeInLeft" data-wow-duration="3s">
+            <img src="{{ asset('images/items/item-our-menu-home-page.png') }}" alt="">
         </div>
     </section>
 
