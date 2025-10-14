@@ -1,0 +1,158 @@
+#footer {
+    .wrap-footer {
+        background-color: var(--Secondary);
+        position: relative;
+        .footer-body {
+            padding-top: 126px;
+            padding-bottom: 37px;
+            position: relative;
+            z-index: 5;
+            .footer-info {
+                margin-bottom: 30px;
+                .footer-logo {
+                    margin-bottom: 27px;
+                    margin-top: 4px;
+                }
+                .text {
+                    font-size: 15px;
+                    color: var(--Text-top-bar);
+                    margin-bottom: 47px;
+                    letter-spacing: 0.2px;
+                    padding-right: 34px;
+                }
+            }
+            .title {
+                margin-bottom: 56px;
+                position: relative;
+                color: var(--White);
+                letter-spacing: 1.3px;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    height: 2px;
+                    width: 73px;
+                    background-color: var(--sort-text);
+                    bottom: -17px;
+                    left: 0;
+                }
+            }
+        }
+        .footer-bottom {
+            @include flex(center, space-between);
+            flex-wrap: wrap;
+            border-top: 1px solid #3c3b3b;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            gap: 20px;
+            position: relative;
+            z-index: 5;
+            p {
+                color: var(--Primary);
+                letter-spacing: 0.4px;
+                text-align: center;
+            }
+            .content-right {
+                @include flex(center, center);
+                gap: 29px;
+                li {
+                    a {
+                        color: var(--White);
+                    }
+                    &:hover {
+                        a {
+                            color: var(--Primary);
+                        }
+                    }
+                }
+            }
+        }
+        .footer-menu-list {
+            margin-bottom: 30px;
+            ul {
+                @include d-flex();
+                flex-direction: column;
+                gap: 10px;
+                li {
+                    color: var(--text-3);
+                    line-height: 25px;
+                    letter-spacing: 0.3px;
+                }
+            }
+            &.time{
+                .title{
+                    margin-left: -5px;
+                    &::before{
+                        left: 5px;
+                    }
+                }
+            }
+            &.latest-new {
+                p {
+                    margin-bottom: 27px;
+                    color: var(--text-3);
+                    letter-spacing: 0.4px;
+                }
+                .form-send-email {
+                    input {
+                        background-color: transparent;
+                        border: 1px solid #575656;
+                        color: var(--White);
+                        &::placeholder {
+                            color: var(--White);
+                        }
+                    }
+                    .button-submit {
+                        top: 25%;
+                        right: 18px;
+                        img {
+                            max-width: 83%;
+                        }
+                    }
+                    .checkbox-item {
+                        margin-top: 33px;
+                        color: var(--text-3);
+                    }
+                }
+            }
+            &.location {
+                .title {
+                    margin-left: 3px;
+                    &::before{
+                        left: 4px;
+                    }
+                }
+                ul {
+                    gap: 18px;
+                    li {
+                        .text {
+                            line-height: 28px;
+                            padding-left: 15px;
+                            letter-spacing: 0.4px;
+                            span {
+                                color: var(--sort-text);
+                                position: relative;
+                                display: inline-block;
+                                margin-bottom: 6px;
+                                &::before {
+                                    position: absolute;
+                                    content: "";
+                                    height: 5px;
+                                    width: 5px;
+                                    background-color: var(--sort-text);
+                                    left: -15px;
+                                    top: 11px;
+                                    border-radius: 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .item{
+            position: absolute;
+            bottom: 49px;
+            
+        }
+    }
+}

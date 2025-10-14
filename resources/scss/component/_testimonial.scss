@@ -1,0 +1,30 @@
+.testimonial-item{
+    .icon {
+        margin:  0 auto 19px;
+        svg{
+            max-width: 41px;
+        }
+    }
+    .paragraph {
+        font-size: 25px;
+        line-height: 36px;
+        font-weight: 700;
+        letter-spacing: 0.46px;
+        max-width: 1147.92px;
+        margin: auto;
+        margin-bottom: 51px;
+        font-family: $font-main2;
+        color: var(--text);
+    }
+    h5 {
+        font-weight: 700;
+        color: var(--text);
+        margin-bottom: 9px;
+        letter-spacing: 2px;
+    }
+    .rating{
+        i{
+            font-size: 19px;
+        }
+    }
+}
