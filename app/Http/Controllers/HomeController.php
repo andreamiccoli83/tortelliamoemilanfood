@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -38,7 +39,12 @@ class HomeController extends Controller
                 'facebook' => '#',
                 'instagram' => '#',
                 'tripadvisor' => '#'
-            ]
+            ],
+            // AGGIUNGIAMO I PRODOTTI
+            'products' => Product::active()
+                ->available()
+                ->orderBy('sort_order')
+                ->get()
         ];
 
         return view('home', $data);

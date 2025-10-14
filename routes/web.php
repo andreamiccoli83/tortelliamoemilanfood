@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsletterController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,14 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 // Newsletter subscription
 Route::post('/newsletter/subscribe', [NewsletterController::class, 'subscribe'])
     ->name('newsletter.subscribe');
+
+// Products routes
+Route::get('/prodotti', [ProductController::class, 'index'])->name('products.index');
+Route::get('/prodotti/{id}', [ProductController::class, 'show'])->name('products.show');
+
+// API endpoint per prodotti (opzionale, per uso AJAX)
+Route::get('/api/products', [ProductController::class, 'apiIndex'])->name('api.products');
+
 
 // Future routes for additional pages
 /*

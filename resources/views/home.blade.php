@@ -395,17 +395,36 @@
                         </p>
                     </div>
                 </div>
+                
+                @forelse($products as $index => $product)
                 <div class="col-lg-4 col-sm-6">
-                    <div class="product-item wow fadeInUp">
+                    <div class="product-item wow fadeInUp" data-wow-delay="{{ $index * 0.1 }}s">
                         <div class="wrap-image">
+                            @if($product->image)
                             <img class="lazyload" 
-                                 data-src="{{ asset('images/nuove/tortelli_zucca.png') }}"
-                                 src="{{ asset('images/nuove/tortelli_zucca.png') }}" 
-                                 alt="Tortelli di Zucca" />
+                                data-src="{{ asset($product->image) }}"
+                                src="{{ asset($product->image) }}" 
+                                alt="{{ $product->name }}" />
+                            @else
+                            <img class="lazyload" 
+                                data-src="{{ asset('images/products/placeholder.jpg') }}"
+                                src="{{ asset('images/products/placeholder.jpg') }}" 
+                                alt="{{ $product->name }}" />
+                            @endif
                         </div>
                         <div class="content">
-                            <div class="price">€4.00</div>
-                            <h4 class="name"><a href="#">TORTELLI DI ZUCCA</a></h4>
+                            <div class="price">{{ $product->formatted_price }}</div>
+                            <h4 class="name">
+                                @if($product->stripe_payment_link && $product->stock_available)
+                                <a href="{{ $product->stripe_payment_link }}" target="_blank" rel="noopener">
+                                    {{ strtoupper($product->name) }}
+                                </a>
+                                @else
+                                <a href="tel:{{ str_replace(' ', '', $contact['phone']) }}">
+                                    {{ strtoupper($product->name) }}
+                                </a>
+                                @endif
+                            </h4>
                             <div class="rating">
                                 <i class="icon-star"></i>
                                 <i class="icon-star"></i>
@@ -413,114 +432,40 @@
                                 <i class="icon-star"></i>
                                 <i class="icon-star"></i>
                             </div>
+                            
+                            @if($product->stock_available)
+                                @if($product->stripe_payment_link)
+                                <!-- Pulsante Ordina con Stripe -->
+                                <a href="{{ $product->stripe_payment_link }}" 
+                                target="_blank" 
+                                rel="noopener"
+                                class="tf-btn-default" 
+                                style="margin-top: 15px; display: inline-block;">
+                                    <i class="icon-shopping-bag"></i> Ordina Ora
+                                </a>
+                                @else
+                                <!-- Pulsante Chiama -->
+                                <a href="tel:{{ str_replace(' ', '', $contact['phone']) }}" 
+                                class="tf-btn-default" 
+                                style="margin-top: 15px; display: inline-block; background: #28a745;">
+                                    <i class="icon-old-phone"></i> Chiama per ordinare
+                                </a>
+                                @endif
+                            @else
+                            <!-- Non disponibile -->
+                            <p style="margin-top: 10px; color: #999; font-style: italic;">Non disponibile</p>
+                            @endif
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="product-item wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="wrap-image">
-                            <img class="lazyload" 
-                                 data-src="{{ asset('images/nuove/cappelletti_brodo.png') }}"
-                                 src="{{ asset('images/nuove/cappelletti_brodo.png') }}" 
-                                 alt="Cappelletti in Brodo" />
-                        </div>
-                        <div class="content">
-                            <div class="price">€6.12</div>
-                            <h4 class="name"><a href="#">CAPPELLETTI IN BRODO</a></h4>
-                            <div class="rating">
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                            </div>
-                        </div>
-                    </div>
+                @empty
+                <div class="col-12">
+                    <p style="text-align: center; padding: 40px; font-size: 18px;">
+                        Nessun prodotto disponibile al momento. 
+                        <a href="tel:{{ str_replace(' ', '', $contact['phone']) }}">Chiamaci</a> per maggiori informazioni.
+                    </p>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="product-item wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="wrap-image">
-                            <img class="lazyload" 
-                                 data-src="{{ asset('images/nuove/lasagne.png') }}"
-                                 src="{{ asset('images/nuove/lasagne.png') }}" 
-                                 alt="Lasagne" />
-                        </div>
-                        <div class="content">
-                            <div class="price">€5.50</div>
-                            <h4 class="name"><a href="#">LASAGNE</a></h4>
-                            <div class="rating">
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="product-item wow fadeInUp">
-                        <div class="wrap-image">
-                            <img class="lazyload" 
-                                 data-src="{{ asset('images/nuove/tagliatelle_ragu.png') }}"
-                                 src="{{ asset('images/nuove/tagliatelle_ragu.png') }}" 
-                                 alt="Tagliatelle al Ragù" />
-                        </div>
-                        <div class="content">
-                            <div class="price">€3.54</div>
-                            <h4 class="name"><a href="#">TAGLIATELLE AL RAGÙ</a></h4>
-                            <div class="rating">
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="product-item wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="wrap-image">
-                            <img class="lazyload" 
-                                 data-src="{{ asset('images/nuove/tortellini_ragu.png') }}"
-                                 src="{{ asset('images/nuove/tortellini_ragu.png') }}" 
-                                 alt="Tortellini al Ragù" />
-                        </div>
-                        <div class="content">
-                            <div class="price">€8.50</div>
-                            <h4 class="name"><a href="#">TORTELLINI AL RAGÙ</a></h4>
-                            <div class="rating">
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="product-item wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="wrap-image">
-                            <img class="lazyload" 
-                                 data-src="{{ asset('images/nuove/parmigiana_melanzane.png') }}"
-                                 src="{{ asset('images/nuove/parmigiana_melanzane.png') }}" 
-                                 alt="Parmigiana di Melanzane" />
-                        </div>
-                        <div class="content">
-                            <div class="price">€6.90</div>
-                            <h4 class="name"><a href="#">PARMIGIANA DI MELANZANE</a></h4>
-                            <div class="rating">
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforelse
             </div>
         </div>
         <div class="item1 wow fadeInRight" data-wow-duration="3s">
