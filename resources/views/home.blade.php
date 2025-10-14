@@ -444,12 +444,7 @@
                                     <i class="icon-shopping-bag"></i> Ordina Ora
                                 </a>
                                 @else
-                                <!-- Pulsante Chiama -->
-                                <a href="tel:{{ str_replace(' ', '', $contact['phone']) }}" 
-                                class="tf-btn-default" 
-                                style="margin-top: 15px; display: inline-block; background: #28a745;">
-                                    <i class="icon-old-phone"></i> Chiama per ordinare
-                                </a>
+                                
                                 @endif
                             @else
                             <!-- Non disponibile -->
