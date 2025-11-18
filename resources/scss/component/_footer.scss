@@ -91,6 +91,14 @@
                     margin-bottom: 27px;
                     color: var(--text-3);
                     letter-spacing: 0.4px;
+                    a {
+                        color: var(--White) !important;
+                        text-decoration: none;
+                        &:hover,
+                        &:focus {
+                            color: var(--White) !important;
+                        }
+                    }
                 }
                 .form-send-email {
                     input {
