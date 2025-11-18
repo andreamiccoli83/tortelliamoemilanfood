@@ -60,35 +60,20 @@
                                     <li>
                                         <a href="#contatti">DOVE SIAMO</a>
                                     </li>
+                                    <li class="menu-badges" style="display: flex; align-items: center; gap: 15px; margin-left: 20px;">
+                                        <img src="{{ asset('images/logo/vegan_friendly_icon.png') }}" 
+                                            alt="Vegan Friendly" 
+                                            style="height: 35px; width: auto;"
+                                            title="Prodotti Vegan Friendly">
+                                        <img src="{{ asset('images/logo/gluten-free-logo.png') }}" 
+                                            alt="Gluten Free" 
+                                            style="height: 35px; width: auto;"
+                                            title="Opzioni Gluten Free">
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
                         <div class="header-right">
-                            <div class="wrap-header-icons">
-                                <div class="header-search">
-                                    <a class="show-search" href="#"><i class="icon-search1"></i></a>
-                                    <div class="top-search">
-                                        <form class="form-search" action="{{ route('home') }}" method="GET">
-                                            <fieldset>
-                                                <input type="search" 
-                                                       placeholder="Cerca..." 
-                                                       name="search" 
-                                                       tabindex="2" 
-                                                       aria-required="true">
-                                            </fieldset>
-                                            <div class="button-submit">
-                                                <button type="submit">
-                                                    <i class="icon-search1"></i>
-                                                </button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="header-cart">
-                                    <a class="show-cart" href="#"><i class="icon-shopping-cart1"></i></a>
-                                    {{-- Contenuto carrello da implementare --}}
-                                </div>
-                            </div>
                             <div class="header-contact">
                                 <div class="icon">
                                     <i class="icon-old-phone"></i>
