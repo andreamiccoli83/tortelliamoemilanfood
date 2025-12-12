@@ -33,7 +33,7 @@
     @stack('styles')
     
     <!-- Vite Assets compilati -->
-    <link rel="stylesheet" href="{{ asset('build/assets/app-CZM26Fmk.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/app-DsNe5CWe.css') }}">
     <script src="{{ asset('build/assets/app-CAiCLEjY.js') }}" defer></script>
 </head>
 <body class="counter-scroll">

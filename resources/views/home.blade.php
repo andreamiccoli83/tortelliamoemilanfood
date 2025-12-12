@@ -35,8 +35,8 @@
                                         </div>
                                     </div>
                                     <h1 class="title fade-item fade-item3">
-                                        PREPARATA CON <br>
-                                        INGREDIENTI SELEZIONATI
+                                        BENVENUTI <br>
+                                        DA TORTELLIAMO
                                     </h1>
                                 </div>
                             </div>
@@ -94,43 +94,75 @@
 <!-- Main Content -->
 <div class="main-content home-page">
     
-    <!-- Section Welcome -->
-    <section id="benvenuti" class="section-welcome tf-spacing-1 pt-0">
+    <!-- Section Welcome - La Nostra Pasta Fresca -->
+    <section id="benvenuti" class="section-welcome section-pasta-fresca pt-0" style="padding-bottom: 60px;">
         <div class="tf-container w-1550">
+            <!-- Titolo centrato -->
             <div class="row">
                 <div class="col-12">
-                    <div class="wrapper">
-                        <div class="wrap-image hover-img left wow fadeInLeft" data-wow-duration="2s">
-                            <img class="lazyload" 
-                                 data-src="{{ asset('images/nuove/prodotti2.png') }}"
-                                 src="{{ asset('images/nuove/prodotti2.png') }}" 
-                                 alt="Prodotti Tortelliamo" />
+                    <div class="heading-section text-center">
+                        <p class="sub-title wow fadeInUp">Tradizione guardando all'innovazione</p>
+                        <div class="title text-4 wow fadeInUp">LA NOSTRA PASTA FRESCA</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Layout 3 colonne -->
+            <div class="row align-items-center">
+                <!-- Colonna 1: Griglia 6 foto piccole (2x3) -->
+                <div class="col-lg-4">
+                    <div class="pasta-grid wow fadeInLeft" data-wow-duration="2s">
+                        <div class="pasta-grid-item">
+                            <img src="{{ asset('images/pasta/pasta_ripiena.jpg') }}" alt="Pasta Ripiena">
                         </div>
-                        <div class="content">
-                            <div class="heading-section">
-                                <p class="sub-title wow fadeInUp">BENVENUTI DA TORTELLIAMO</p>
-                                <div class="title text-4 wow fadeInUp">
-                                    GASTRONOMIA CON SAPORI AUTENTICI DELLA TRADIZIONE.
-                                </div>
-                                <p class="short-desc wow fadeInUp">
-                                    La nostra gastronomia è un punto di riferimento 
-                                    per chi cerca l'autentica cucina emiliana, 
-                                    preparata con ingredienti selezionati e ricette tradizionali
-                                </p>
-                            </div>
-                            <p class="desc wow fadeInUp">
-                                Siamo un'attività familiare che porta avanti la tradizione gastronomica di Novellara.
-                                La nostra passione per la cucina emiliana ci ha spinto a creare un luogo dove i sapori
-                                autentici del territorio possono essere apprezzati da tutti, mantenendo vive le ricette
-                                tramandate di generazione in generazione.
-                            </p>
+                        <div class="pasta-grid-item">
+                            <img src="{{ asset('images/pasta/pasta_forno.jpg') }}" alt="Pasta al Forno">
                         </div>
-                        <div class="wrap-image hover-img right wow fadeInRight" data-wow-duration="2s">
-                            <img class="lazyload" 
-                                 data-src="{{ asset('images/nuove/lasagna.png') }}"
-                                 src="{{ asset('images/nuove/lasagna.png') }}" 
-                                 alt="Lasagna" />
+                        <div class="pasta-grid-item">
+                            <img src="{{ asset('images/pasta/pasta_lunga.jpg') }}" alt="Pasta Lunga">
                         </div>
+                        <div class="pasta-grid-item">
+                            <img src="{{ asset('images/pasta/pasta_torchio.jpg') }}" alt="Pasta al Torchio">
+                        </div>
+                        <div class="pasta-grid-item">
+                            <img src="{{ asset('images/pasta/pasta_gnocchi.jpg') }}" alt="Gnocchi">
+                        </div>
+                        <div class="pasta-grid-item">
+                            <img src="{{ asset('images/pasta/pasta_vegana.jpg') }}" alt="Pasta Vegana">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Colonna 2: Foto centrale con arco -->
+                <div class="col-lg-4">
+                    <div class="wrap-image hover-img left mx-auto wow fadeInUp" data-wow-duration="2s">
+                        <img class="lazyload" 
+                             data-src="{{ asset('images/nuove/pasta-fresca.jpg') }}"
+                             src="{{ asset('images/nuove/pasta-fresca.jpg') }}" 
+                             alt="Prodotti Tortelliamo" />
+                    </div>
+                </div>
+                
+                <!-- Colonna 3: Testo descrittivo -->
+                <div class="col-lg-4">
+                    <div class="pasta-content">
+                        <p class="desc wow fadeInUp">
+                            Non esistono innovazioni senza tradizione. L'innovazione non esclude la tradizione.
+                            La nostra pasta è fatta tutti i giorni con prodotti genuini: uova fresche pastorizzate 
+                            e soprattutto prodotti locali, quando possibile a km 0.
+                        </p>
+                        <p class="desc wow fadeInUp" data-wow-delay="0.2s">
+                            Utilizziamo la pastorizzazione del prodotto per garantire la conservazione 
+                            e mantenere la freschezza.
+                        </p>
+                        <ul class="pasta-types wow fadeInUp" data-wow-delay="0.4s">
+                            <li><strong>Pasta ripiena:</strong> tortelli, cappelletti</li>
+                            <li><strong>Pasta al forno:</strong> lasagne, rosette, crespelle</li>
+                            <li><strong>Pasta lunga:</strong> tagliatelle, tagliolini</li>
+                            <li><strong>Pasta al torchio:</strong> gramigna, bigoli, passatelli</li>
+                            <li><strong>Pasta fresca:</strong> gnocchi</li>
+                            <li><strong>Pasta vegana</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
