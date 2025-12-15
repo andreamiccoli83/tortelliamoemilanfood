@@ -49,10 +49,10 @@
                                         <a href="#benvenuti">PASTA FRESCA</a>
                                     </li>
                                     <li>
-                                        <a href="#offerta">GASTRONOMIA</a>
+                                        <a href="#prodotti">GASTRONOMIA</a>
                                     </li>
                                      <li>
-                                        <a href="#prodotti">PRODOTTI</a>
+                                        <a href="#acquista">ACQUISTA</a>
                                     </li>
                                     <li>
                                         <a href="#team">SERVIZI</a>
@@ -115,10 +115,10 @@
                     <a class="item-menu-mobile" href="#benvenuti">PASTA FRESCA</a>
                 </li>
                 <li class="menu-item">
-                    <a class="item-menu-mobile" href="#offerta">GASTRONOMIA</a>
+                    <a class="item-menu-mobile" href="#prodotti">GASTRONOMIA</a>
                 </li>
                 <li class="menu-item">
-                    <a class="item-menu-mobile" href="#prodotti">PRODOTTI</a>
+                    <a class="item-menu-mobile" href="#acquista">ACQUISTA</a>
                 </li>
                 <li class="menu-item">
                     <a class="item-menu-mobile" href="#team">SERVIZI</a>

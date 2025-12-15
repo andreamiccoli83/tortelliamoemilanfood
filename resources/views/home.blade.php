@@ -288,76 +288,21 @@
         </div>
     </section>
 
-    <!-- Section Team -->
-    <section id="team" class="section-post tf-spacing-5 pt-0">
-        <div class="wrap-image">
-            <img class="lazyload" 
-                 data-src="{{ asset('images/nuove/adriano.png') }}"
-                 src="{{ asset('images/nuove/adriano.png') }}" 
-                 alt="Il nostro team" />
-        </div>
-        <div class="box-post default" data-wow-delay="0.1s">
-            <div class="wrap-content">
-                <div class="content wow fadeInUp">
-                    <div class="icon">
-                        <img src="{{ asset('icons/icon-post.svg') }}" alt="">
-                    </div>
-                    <h2 class="title">IL NOSTRO TEAM</h2>
-                    <p class="decs">
-                        Crediamo nella qualità artigianale. Con il passare degli anni, 
-                        abbiamo ampliato la nostra offerta mantenendo sempre gli stessi valori 
-                        e la stessa passione per la tradizione.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="box-post style-2" data-wow-delay="0.2s">
-            <div class="wrap-content">
-                <div class="wrap-image">
-                    <img class="lazyload" 
-                         data-src="{{ asset('images/nuove/menu_stagionale.png') }}"
-                         src="{{ asset('images/nuove/menu_stagionale.png') }}" 
-                         alt="Menu Stagionale" />
-                </div>
-                <div class="content wow fadeInDown">
-                    <h2 class="title">MENU STAGIONALE</h2>
-                    <p class="">
-                        Prepariamo quotidianamente pasta fresca e specialità gastronomiche seguendo il ritmo delle stagioni, 
-                        utilizzando ingredienti freschi e di qualità.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="box-post style-3" data-wow-delay="0.3s">
-            <div class="wrap-content">
-                <div class="content wow fadeInUp">
-                    <h2 class="title">LA NOSTRA STORIA</h2>
-                    <p>
-                        La nostra gastronomia nasce dalla passione per le ricette tradizionali emiliane, 
-                        tramandate di generazione in generazione e preparate con ingredienti selezionati del nostro territorio.
-                    </p>
-                </div>
-                <div class="wrap-image">
-                    <img class="lazyload" 
-                         data-src="{{ asset('images/nuove/storia1.png') }}"
-                         src="{{ asset('images/nuove/storia1.png') }}" 
-                         alt="La nostra storia" />
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Section Best Selling Products -->
-    <section class="section-best-selling tf-spacing-2 pt-0">
+    <section id="acquista" class="section-best-selling tf-spacing-2" style="background-color: #f8f5f0; padding-top: 60px;">
         <div class="tf-container">
             <div class="row">
                 <div class="col-12">
                     <div class="heading-section">
-                        <p class="sub-title wow fadeInUp">I NOSTRI PRODOTTI PIÙ VENDUTI</p>
-                        <div class="title text-4 wow fadeInUp">CONSIGLIATI DALLO CHEF</div>
+                        <p class="sub-title wow fadeInUp">I NOSTRI PRODOTTI</p>
+                        <div class="title text-4 wow fadeInUp">ACQUISTA ONLINE</div>
+                        <div class="wow fadeInUp" style="text-align: center; margin: 20px 0;">
+                            <img src="{{ asset('images/nuove/adriano_vespa.png') }}" alt="Spedizioni" style="height: 100px; width: auto;">
+                            <p style="font-size: 14px; margin-top: 10px; font-weight: 600; color: var(--Primary);">SPEDIZIONI IN TUTTA ITALIA</p>
+                        </div>
                         <p class="wow fadeInUp">
-                            Scoprite le nostre specialità più amate, preparate secondo le ricette tradizionali emiliane.<br>
-                            I nostri chef hanno creato un universo di sapori autentici che vi conquisteranno!
+                            Ordina le nostre specialità e ricevile comodamente a casa tua.<br>
+                            Pasta fresca, tortelli e prodotti tipici emiliani direttamente dal nostro laboratorio!
                         </p>
                     </div>
                 </div>
@@ -429,11 +374,64 @@
                 @endforelse
             </div>
         </div>
-        <div class="item1 wow fadeInRight" data-wow-duration="3s">
-            <img src="{{ asset('images/items/item-section-best-selling.png') }}" alt="">
+    </section>
+
+    <!-- Section Team -->
+    <section id="team" class="section-post tf-spacing-5 pt-0">
+        <div class="wrap-image">
+            <img class="lazyload" 
+                 data-src="{{ asset('images/nuove/adriano.png') }}"
+                 src="{{ asset('images/nuove/adriano.png') }}" 
+                 alt="Il nostro team" />
         </div>
-        <div class="item2 wow fadeInLeft" data-wow-duration="3s">
-            <img src="{{ asset('images/items/item-section-best-selling2.png') }}" alt="">
+        <div class="box-post default" data-wow-delay="0.1s">
+            <div class="wrap-content">
+                <div class="content wow fadeInUp">
+                    <div class="icon">
+                        <img src="{{ asset('icons/icon-post.svg') }}" alt="">
+                    </div>
+                    <h2 class="title">IL NOSTRO TEAM</h2>
+                    <p class="decs">
+                        Crediamo nella qualità artigianale. Con il passare degli anni, 
+                        abbiamo ampliato la nostra offerta mantenendo sempre gli stessi valori 
+                        e la stessa passione per la tradizione.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box-post style-2" data-wow-delay="0.2s">
+            <div class="wrap-content">
+                <div class="wrap-image">
+                    <img class="lazyload" 
+                         data-src="{{ asset('images/nuove/menu_stagionale.png') }}"
+                         src="{{ asset('images/nuove/menu_stagionale.png') }}" 
+                         alt="Menu Stagionale" />
+                </div>
+                <div class="content wow fadeInDown">
+                    <h2 class="title">MENU STAGIONALE</h2>
+                    <p class="">
+                        Prepariamo quotidianamente pasta fresca e specialità gastronomiche seguendo il ritmo delle stagioni, 
+                        utilizzando ingredienti freschi e di qualità.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box-post style-3" data-wow-delay="0.3s">
+            <div class="wrap-content">
+                <div class="content wow fadeInUp">
+                    <h2 class="title">LA NOSTRA STORIA</h2>
+                    <p>
+                        La nostra gastronomia nasce dalla passione per le ricette tradizionali emiliane, 
+                        tramandate di generazione in generazione e preparate con ingredienti selezionati del nostro territorio.
+                    </p>
+                </div>
+                <div class="wrap-image">
+                    <img class="lazyload" 
+                         data-src="{{ asset('images/nuove/storia1.png') }}"
+                         src="{{ asset('images/nuove/storia1.png') }}" 
+                         alt="La nostra storia" />
+                </div>
+            </div>
         </div>
     </section>
 
