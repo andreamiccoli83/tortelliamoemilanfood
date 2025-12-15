@@ -154,80 +154,79 @@
                                  style="height: 80px; width: auto;">
                             GASTRONOMIA
                         </div>
-                        <p class="wow fadeInUp">
-                            Pasto completo dagli antipasti ai dolci. Piatti pronti da gustare e da asporto.<br>
-                            Si può effettuare anche il consumo sul posto. Prenota su WhatsApp!
-                        </p>
                     </div>
+                    <!-- Punti chiave visibili -->
+                    <ul class="list-check wow fadeInUp" style="margin-top: 20px; margin-bottom: 30px;">
+                        <li><i class="icon-check1"></i> <strong>PIATTI PRONTI</strong> - Pasto completo dagli antipasti ai dolci, da gustare e da asporto</li>
+                        <li><i class="icon-check1"></i> <strong>CONSUMO SUL POSTO</strong> - Vieni a trovarci per un pranzo veloce o una pausa gustosa</li>
+                        <li><i class="icon-check1"></i> <strong>ORDINA SU WHATSAPP</strong> - Prenota i tuoi piatti preferiti e ritirali quando vuoi</li>
+                    </ul>
                 </div>
                 <div class="swiper-container slide-our-menu">
                     <div class="swiper-wrapper">
-                        <!-- Slide 1: Pasta Fresca -->
+                        <!-- Slide 1 -->
                         <div class="swiper-slide">
                             <div class="our-menu-item hover-img wow fadeInUp">
                                 <div class="wrap-image">
                                     <img class="lazyload" 
                                          data-src="{{ asset('images/nuove/banco3.jpg') }}"
                                          src="{{ asset('images/nuove/banco3.jpg') }}" 
-                                         alt="Pasta Fresca" />
-                                </div>
-                                <div class="content">
-                                    <div class="wrap">
-                                        <div class="title"><a href="#">PIATTI PRONTI</a></div>
-                                        <p>
-                                            Ogni giorno prepariamo piatti pronti da gustare sul posto 
-                                            o da portare a casa. Antipasti, primi, secondi e dolci.
-                                        </p>
-                                        <div class="icon">
-                                            <a href="#"><i class="icon-arrow-draw"></i></a>
-                                        </div>
-                                    </div>
+                                         alt="Gastronomia" />
                                 </div>
                             </div>
                         </div>
-                        <!-- Slide 2: Primi Piatti -->
+                        <!-- Slide 2 -->
                         <div class="swiper-slide">
-                            <div class="our-menu-item hover-img wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="our-menu-item hover-img wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="wrap-image">
                                     <img class="lazyload" 
                                          data-src="{{ asset('images/nuove/banco4.jpg') }}"
                                          src="{{ asset('images/nuove/banco4.jpg') }}" 
-                                         alt="Primi Piatti" />
-                                </div>
-                                <div class="content">
-                                    <div class="wrap">
-                                        <div class="title"><a href="#">CONSUMO SUL POSTO</a></div>
-                                        <p>
-                                            Vieni a trovarci per un pranzo veloce o una pausa gustosa. 
-                                            Puoi mangiare comodamente nel nostro locale.
-                                        </p>
-                                        <div class="icon">
-                                            <a href="#"><i class="icon-arrow-draw"></i></a>
-                                        </div>
-                                    </div>
+                                         alt="Gastronomia" />
                                 </div>
                             </div>
                         </div>
-                        <!-- Slide 3: Specialità Gastronomiche -->
+                        <!-- Slide 3 -->
                         <div class="swiper-slide">
-                            <div class="our-menu-item hover-img mb-0 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="our-menu-item hover-img wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="wrap-image">
                                     <img class="lazyload" 
                                          data-src="{{ asset('images/nuove/banco5.jpg') }}"
                                          src="{{ asset('images/nuove/banco5.jpg') }}" 
-                                         alt="Specialità Gastronomiche" />
+                                         alt="Gastronomia" />
                                 </div>
-                                <div class="content">
-                                    <div class="wrap">
-                                        <div class="title"><a href="#">ORDINA SU WHATSAPP</a></div>
-                                        <p>
-                                            Prenota i tuoi piatti preferiti su WhatsApp e ritirali 
-                                            quando vuoi. Comodo, veloce e sempre fresco.
-                                        </p>
-                                        <div class="icon">
-                                            <a href="#"><i class="icon-arrow-draw"></i></a>
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <!-- Slide 4 (duplicato) -->
+                        <div class="swiper-slide">
+                            <div class="our-menu-item hover-img wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="wrap-image">
+                                    <img class="lazyload" 
+                                         data-src="{{ asset('images/nuove/banco3.jpg') }}"
+                                         src="{{ asset('images/nuove/banco3.jpg') }}" 
+                                         alt="Gastronomia" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 5 (duplicato) -->
+                        <div class="swiper-slide">
+                            <div class="our-menu-item hover-img wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="wrap-image">
+                                    <img class="lazyload" 
+                                         data-src="{{ asset('images/nuove/banco4.jpg') }}"
+                                         src="{{ asset('images/nuove/banco4.jpg') }}" 
+                                         alt="Gastronomia" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 6 (duplicato) -->
+                        <div class="swiper-slide">
+                            <div class="our-menu-item hover-img mb-0 wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="wrap-image">
+                                    <img class="lazyload" 
+                                         data-src="{{ asset('images/nuove/banco5.jpg') }}"
+                                         src="{{ asset('images/nuove/banco5.jpg') }}" 
+                                         alt="Gastronomia" />
                                 </div>
                             </div>
                         </div>
