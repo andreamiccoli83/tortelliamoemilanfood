@@ -46,16 +46,16 @@
                             <nav class="main-menu">
                                 <ul class="navigation">
                                     <li class="{{ Request::is('/') ? 'active' : '' }}">
-                                        <a href="#benvenuti">BENVENUTI</a>
+                                        <a href="#benvenuti">PASTA FRESCA</a>
                                     </li>
                                     <li>
-                                        <a href="#offerta">LA NOSTRA OFFERTA</a>
+                                        <a href="#offerta">GASTRONOMIA</a>
                                     </li>
-                                    <li>
-                                        <a href="#team">IL TEAM</a>
-                                    </li>
-                                    <li>
+                                     <li>
                                         <a href="#prodotti">PRODOTTI</a>
+                                    </li>
+                                    <li>
+                                        <a href="#team">SERVIZI</a>
                                     </li>
                                     <li>
                                         <a href="#contatti">DOVE SIAMO</a>
@@ -112,16 +112,16 @@
         <nav id="mobile-main-nav" class="mobile-main-nav">
             <ul id="menu-mobile-menu" class="menu">
                 <li class="menu-item">
-                    <a class="item-menu-mobile" href="#benvenuti">BENVENUTI</a>
+                    <a class="item-menu-mobile" href="#benvenuti">PASTA FRESCA</a>
                 </li>
                 <li class="menu-item">
-                    <a class="item-menu-mobile" href="#offerta">LA NOSTRA OFFERTA</a>
-                </li>
-                <li class="menu-item">
-                    <a class="item-menu-mobile" href="#team">IL TEAM</a>
+                    <a class="item-menu-mobile" href="#offerta">GASTRONOMIA</a>
                 </li>
                 <li class="menu-item">
                     <a class="item-menu-mobile" href="#prodotti">PRODOTTI</a>
+                </li>
+                <li class="menu-item">
+                    <a class="item-menu-mobile" href="#team">SERVIZI</a>
                 </li>
                 <li class="menu-item">
                     <a class="item-menu-mobile" href="#contatti">DOVE SIAMO</a>

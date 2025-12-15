@@ -19,9 +19,9 @@
                                 <div class="content">
                                     <div class="icon-top fade-item fade-item1">
                                         <img class="lazyload" 
-                                             data-src="{{ asset('images/nuove/cappelletti_stilizzati1.png') }}"
-                                             src="{{ asset('images/nuove/cappelletti_stilizzati1.png') }}" 
-                                             alt="">
+                                             data-src="{{ asset('images/nuove/adriano_disegno.png') }}"
+                                             src="{{ asset('images/nuove/adriano_disegno.png') }}" 
+                                             alt="Adriano">
                                     </div>
                                     <div class="fade-item fade-item2">
                                         <div class="sub-title text-1">
@@ -44,46 +44,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Slide 2 -->
-            <div class="swiper-slide">
-                <div class="page-title relative style-1">
-                    <div class="tf-container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="content">
-                                    <div class="icon-top fade-item fade-item1">
-                                        <img class="lazyload" 
-                                             data-src="{{ asset('images/nuove/cappelletti_stilizzati1.png') }}"
-                                             src="{{ asset('images/nuove/cappelletti_stilizzati1.png') }}" 
-                                             alt="">
-                                    </div>
-                                    <div class="fade-item fade-item2">
-                                        <div class="sub-title text-1">
-                                            Gastronomia Novellara
-                                        </div>
-                                        <div class="under-line">
-                                            <img class="lazyload" 
-                                                 data-src="{{ asset('images/logo/line.png') }}"
-                                                 src="{{ asset('images/logo/line.png') }}" 
-                                                 alt="">
-                                        </div>
-                                    </div>
-                                    <h1 class="title fade-item fade-item3">
-                                        PASTA FRESCA E<br>
-                                        TRADIZIONE EMILIANA
-                                    </h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-button-next button page-title-next">
-            <i class="icon-arrow-draw"></i>
-        </div>
-        <div class="swiper-button-prev button page-title-prev">
-            <i class="icon-arrow-draw"></i>
         </div>
     </div>
     <div class="image">
@@ -97,38 +57,37 @@
     <!-- Section Welcome - La Nostra Pasta Fresca -->
     <section id="benvenuti" class="section-welcome section-pasta-fresca pt-0" style="padding-bottom: 60px;">
         <div class="tf-container w-1550">
-            <!-- Titolo centrato -->
+            <!-- Titolo centrato con Adriano a destra -->
             <div class="row">
                 <div class="col-12">
                     <div class="heading-section text-center">
                         <p class="sub-title wow fadeInUp">Tradizione guardando all'innovazione</p>
-                        <div class="title text-4 wow fadeInUp">LA NOSTRA PASTA FRESCA</div>
+                        <div class="title text-4 wow fadeInUp" style="display: inline-flex; align-items: center; gap: 15px;">
+                            <img src="{{ asset('images/nuove/adriano_destra.png') }}" 
+                                 alt="Adriano" 
+                                 style="height: 80px; width: auto;">
+                            LA NOSTRA PASTA FRESCA
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- Layout 3 colonne -->
             <div class="row align-items-center">
-                <!-- Colonna 1: Griglia 6 foto piccole (2x3) -->
+                <!-- Colonna 1: Griglia 4 foto (2x2) -->
                 <div class="col-lg-4">
-                    <div class="pasta-grid wow fadeInLeft" data-wow-duration="2s">
+                    <div class="pasta-grid pasta-grid-4 wow fadeInLeft" data-wow-duration="2s">
                         <div class="pasta-grid-item">
-                            <img src="{{ asset('images/pasta/pasta_ripiena.jpg') }}" alt="Pasta Ripiena">
+                            <img src="{{ asset('images/nuove/pasta_fresca/cappelletti.jpg') }}" alt="Cappelletti">
                         </div>
                         <div class="pasta-grid-item">
-                            <img src="{{ asset('images/pasta/pasta_forno.jpg') }}" alt="Pasta al Forno">
+                            <img src="{{ asset('images/nuove/pasta_fresca/lasagne.jpg') }}" alt="Lasagne">
                         </div>
                         <div class="pasta-grid-item">
-                            <img src="{{ asset('images/pasta/pasta_lunga.jpg') }}" alt="Pasta Lunga">
+                            <img src="{{ asset('images/nuove/pasta_fresca/gnocchi.jpg') }}" alt="Gnocchi">
                         </div>
                         <div class="pasta-grid-item">
-                            <img src="{{ asset('images/pasta/pasta_torchio.jpg') }}" alt="Pasta al Torchio">
-                        </div>
-                        <div class="pasta-grid-item">
-                            <img src="{{ asset('images/pasta/pasta_gnocchi.jpg') }}" alt="Gnocchi">
-                        </div>
-                        <div class="pasta-grid-item">
-                            <img src="{{ asset('images/pasta/pasta_vegana.jpg') }}" alt="Pasta Vegana">
+                            <img src="{{ asset('images/nuove/pasta_fresca/rosette.jpg') }}" alt="Rosette">
                         </div>
                     </div>
                 </div>
@@ -188,11 +147,16 @@
             <div class="row">
                 <div class="col-12">
                     <div class="heading-section">
-                        <p class="sub-title wow fadeInUp">I NOSTRI PRODOTTI</p>
-                        <div class="title text-4 wow fadeInUp">LA NOSTRA OFFERTA</div>
+                        <p class="sub-title wow fadeInUp">TUTTI I GIORNI</p>
+                        <div class="title text-4 wow fadeInUp" style="display: inline-flex; align-items: center; gap: 15px;">
+                            <img src="{{ asset('images/nuove/adriano_destra.png') }}" 
+                                 alt="Adriano" 
+                                 style="height: 80px; width: auto;">
+                            GASTRONOMIA
+                        </div>
                         <p class="wow fadeInUp">
-                            Vi invitiamo a scoprire la nostra selezione di pasta fresca e specialità gastronomiche,<br>
-                            preparate con ingredienti di prima qualità e nel rispetto delle tradizioni culinarie emiliane.
+                            Pasto completo dagli antipasti ai dolci. Piatti pronti da gustare e da asporto.<br>
+                            Si può effettuare anche il consumo sul posto. Prenota su WhatsApp!
                         </p>
                     </div>
                 </div>
@@ -203,16 +167,16 @@
                             <div class="our-menu-item hover-img wow fadeInUp">
                                 <div class="wrap-image">
                                     <img class="lazyload" 
-                                         data-src="{{ asset('images/nuove/pasta_fresca.png') }}"
-                                         src="{{ asset('images/nuove/pasta_fresca.png') }}" 
+                                         data-src="{{ asset('images/nuove/banco3.jpg') }}"
+                                         src="{{ asset('images/nuove/banco3.jpg') }}" 
                                          alt="Pasta Fresca" />
                                 </div>
                                 <div class="content">
                                     <div class="wrap">
-                                        <div class="title"><a href="#">PASTA FRESCA</a></div>
+                                        <div class="title"><a href="#">PIATTI PRONTI</a></div>
                                         <p>
-                                            La nostra pasta fresca è preparata quotidianamente seguendo le ricette 
-                                            tradizionali emiliane, con ingredienti selezionati e di prima qualità.
+                                            Ogni giorno prepariamo piatti pronti da gustare sul posto 
+                                            o da portare a casa. Antipasti, primi, secondi e dolci.
                                         </p>
                                         <div class="icon">
                                             <a href="#"><i class="icon-arrow-draw"></i></a>
@@ -226,16 +190,16 @@
                             <div class="our-menu-item hover-img wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="wrap-image">
                                     <img class="lazyload" 
-                                         data-src="{{ asset('images/nuove/primi_piatti.png') }}"
-                                         src="{{ asset('images/nuove/primi_piatti.png') }}" 
+                                         data-src="{{ asset('images/nuove/banco4.jpg') }}"
+                                         src="{{ asset('images/nuove/banco4.jpg') }}" 
                                          alt="Primi Piatti" />
                                 </div>
                                 <div class="content">
                                     <div class="wrap">
-                                        <div class="title"><a href="#">PRIMI PIATTI</a></div>
+                                        <div class="title"><a href="#">CONSUMO SUL POSTO</a></div>
                                         <p>
-                                            Lasagne, cannelloni e altre specialità pronte da cuocere, preparate secondo 
-                                            le ricette della tradizione emiliana con ingredienti genuini.
+                                            Vieni a trovarci per un pranzo veloce o una pausa gustosa. 
+                                            Puoi mangiare comodamente nel nostro locale.
                                         </p>
                                         <div class="icon">
                                             <a href="#"><i class="icon-arrow-draw"></i></a>
@@ -249,16 +213,16 @@
                             <div class="our-menu-item hover-img mb-0 wow fadeInUp" data-wow-delay="0.4s">
                                 <div class="wrap-image">
                                     <img class="lazyload" 
-                                         data-src="{{ asset('images/nuove/specialita_gastronomiche.png') }}"
-                                         src="{{ asset('images/nuove/specialita_gastronomiche.png') }}" 
+                                         data-src="{{ asset('images/nuove/banco5.jpg') }}"
+                                         src="{{ asset('images/nuove/banco5.jpg') }}" 
                                          alt="Specialità Gastronomiche" />
                                 </div>
                                 <div class="content">
                                     <div class="wrap">
-                                        <div class="title"><a href="#">SPECIALITÀ GASTRONOMICHE</a></div>
+                                        <div class="title"><a href="#">ORDINA SU WHATSAPP</a></div>
                                         <p>
-                                            Piatti pronti, secondi e contorni della tradizione emiliana, preparati con 
-                                            cura e passione per soddisfare anche i palati più esigenti.
+                                            Prenota i tuoi piatti preferiti su WhatsApp e ritirali 
+                                            quando vuoi. Comodo, veloce e sempre fresco.
                                         </p>
                                         <div class="icon">
                                             <a href="#"><i class="icon-arrow-draw"></i></a>
@@ -284,8 +248,8 @@
                     <div class="wrap-image">
                         <div class="image">
                             <img class="lazyload" 
-                                 data-src="{{ asset('images/nuove/sicurezza_alimentare.png') }}"
-                                 src="{{ asset('images/nuove/sicurezza_alimentare.png') }}" 
+                                 data-src="{{ asset('images/nuove/banco2.jpg') }}"
+                                 src="{{ asset('images/nuove/banco2.jpg') }}" 
                                  alt="Sicurezza Alimentare" />
                         </div>
                         <div class="item1 wow rotateIn" data-wow-duration="2s">
@@ -296,18 +260,22 @@
                 <div class="col-sm-6">
                     <div class="content">
                         <div class="heading-section">
-                            <p class="sub-title wow fadeInUp">PERCHÉ SCEGLIERCI</p>
-                            <div class="title text-4 wow fadeInUp">QUALITÀ E TRADIZIONE</div>
+                            <img src="{{ asset('images/nuove/adriano_buono.png') }}" 
+                                 alt="Adriano" 
+                                 class="wow fadeInDown"
+                                 style="height: 80px; width: auto; margin-bottom: 10px;">
+                            <p class="sub-title wow fadeInUp">PRODUTTORI LOCALI</p>
+                            <div class="title text-4 wow fadeInUp">I NOSTRI PRODOTTI</div>
                             <p class="wow fadeInUp line-clamp-4">
-                                Crediamo nella qualità senza compromessi. 
-                                Con il passare degli anni, abbiamo ampliato la nostra offerta mantenendo sempre gli stessi valori: 
-                                ingredienti selezionati, ricette tradizionali e passione per la gastronomia emiliana.
+                                Oltre ai nostri piatti, offriamo una selezione di prodotti artigianali 
+                                di produttori locali. Qualità e tradizione del territorio.
                             </p>
                         </div>
                         <ul class="list-check wow fadeInUp">
-                            <li><i class="icon-check1"></i> SICUREZZA ALIMENTARE GARANTITA</li>
-                            <li><i class="icon-check1"></i> PRODOTTI SEMPRE FRESCHI</li>
-                            <li><i class="icon-check1"></i> ORDINAZIONE FACILE E CONSEGNA A DOMICILIO</li>
+                            <li><i class="icon-check1"></i> Vini: lambrusco e birre artigianali</li>
+                            <li><i class="icon-check1"></i> Sughi pronti per pasta</li>
+                            <li><i class="icon-check1"></i> Basi, giardiniere, composte e marmellate</li>
+                            <li><i class="icon-check1"></i> Liquori artigianali</li>
                         </ul>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-/* Pasta Grid - Griglia 6 foto per sezione pasta fresca */
+/* Pasta Grid - Griglia foto per sezione pasta fresca */
 .pasta-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -6,6 +6,11 @@
     gap: 0;
     width: 100%;
     height: 450px; // Stessa altezza dell'arco centrale
+    
+    // Variante 4 foto (2x2)
+    &.pasta-grid-4 {
+        grid-template-rows: repeat(2, 1fr);
+    }
     
     .pasta-grid-item {
         position: relative;
