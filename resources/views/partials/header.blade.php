@@ -55,7 +55,7 @@
                                         <a href="#acquista">ACQUISTA</a>
                                     </li>
                                     <li>
-                                        <a href="#team">SERVIZI</a>
+                                        <a href="#servizi">SERVIZI</a>
                                     </li>
                                     <li>
                                         <a href="#contatti">DOVE SIAMO</a>
@@ -121,7 +121,7 @@
                     <a class="item-menu-mobile" href="#acquista">ACQUISTA</a>
                 </li>
                 <li class="menu-item">
-                    <a class="item-menu-mobile" href="#team">SERVIZI</a>
+                    <a class="item-menu-mobile" href="#servizi">SERVIZI</a>
                 </li>
                 <li class="menu-item">
                     <a class="item-menu-mobile" href="#contatti">DOVE SIAMO</a>

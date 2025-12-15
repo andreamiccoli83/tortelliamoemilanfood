@@ -60,12 +60,12 @@
             <!-- Titolo centrato con Adriano a destra -->
             <div class="row">
                 <div class="col-12">
-                    <div class="heading-section text-center">
+                    <div class="heading-section text-center" style="position: relative;">
                         <p class="sub-title wow fadeInUp">Tradizione guardando all'innovazione</p>
-                        <div class="title text-4 wow fadeInUp" style="display: inline-flex; align-items: center; gap: 15px;">
+                        <div class="title text-4 wow fadeInUp" style="position: relative; display: inline-block;">
                             <img src="{{ asset('images/nuove/adriano_destra.png') }}" 
                                  alt="Adriano" 
-                                 style="height: 80px; width: auto;">
+                                 style="height: 150px; width: auto; position: absolute; right: 100%; top: 50%; transform: translateY(-50%); margin-right: 15px;">
                             LA NOSTRA PASTA FRESCA
                         </div>
                     </div>
@@ -146,12 +146,12 @@
         <div class="tf-container">
             <div class="row">
                 <div class="col-12">
-                    <div class="heading-section">
+                    <div class="heading-section text-center" style="position: relative;">
                         <p class="sub-title wow fadeInUp">TUTTI I GIORNI</p>
-                        <div class="title text-4 wow fadeInUp" style="display: inline-flex; align-items: center; gap: 15px;">
+                        <div class="title text-4 wow fadeInUp" style="position: relative; display: inline-block;">
                             <img src="{{ asset('images/nuove/adriano_destra.png') }}" 
                                  alt="Adriano" 
-                                 style="height: 80px; width: auto;">
+                                 style="height: 150px; width: auto; position: absolute; right: 100%; top: 50%; transform: translateY(-50%); margin-right: 15px;">
                             GASTRONOMIA
                         </div>
                     </div>
@@ -229,7 +229,7 @@
                             <img src="{{ asset('images/nuove/adriano_buono.png') }}" 
                                  alt="Adriano" 
                                  class="wow fadeInDown"
-                                 style="height: 80px; width: auto; margin-bottom: 10px;">
+                                 style="height: 150px; width: auto; margin-bottom: 10px;">
                             <p class="sub-title wow fadeInUp">PRODUTTORI LOCALI</p>
                             <div class="title text-4 wow fadeInUp">I NOSTRI PRODOTTI</div>
                             <p class="wow fadeInUp line-clamp-4">
@@ -297,7 +297,7 @@
                         <p class="sub-title wow fadeInUp">I NOSTRI PRODOTTI</p>
                         <div class="title text-4 wow fadeInUp">ACQUISTA ONLINE</div>
                         <div class="wow fadeInUp" style="text-align: center; margin: 20px 0;">
-                            <img src="{{ asset('images/nuove/adriano_vespa.png') }}" alt="Spedizioni" style="height: 100px; width: auto;">
+                            <img src="{{ asset('images/nuove/adriano_vespa.png') }}" alt="Spedizioni" style="height: 150px; width: auto;">
                             <p style="font-size: 14px; margin-top: 10px; font-weight: 600; color: var(--Primary);">SPEDIZIONI IN TUTTA ITALIA</p>
                         </div>
                         <p class="wow fadeInUp">
@@ -376,14 +376,114 @@
         </div>
     </section>
 
+    <!-- Section Servizi -->
+    <section id="servizi" class="section-testimonial tf-spacing-6">
+        <!-- Titolo sezione -->
+        <div class="tf-container">
+            <div class="heading-section text-center wow fadeInUp" style="margin-bottom: 50px;">
+                <p class="sub-title">COSA FACCIAMO</p>
+                <div class="title text-4">I NOSTRI SERVIZI</div>
+            </div>
+        </div>
+        
+        <style>
+            .service-item .wrap-image {
+                height: 280px;
+                overflow: hidden;
+            }
+            .service-item .wrap-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        </style>
+        
+        <div class="wrap-service-item">
+            <div class="swiper-container slide-layout-4 mb-0">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="service-item wow fadeInUp">
+                            <div class="wrap-image">
+                                <img class="lazyload" 
+                                     data-src="{{ asset('images/nuove/buffet.JPG') }}"
+                                     src="{{ asset('images/nuove/buffet.JPG') }}" 
+                                     alt="Catering" />
+                            </div>
+                            <div class="content">
+                                <div class="icon">
+                                    <i class="icon-dish"></i>
+                                </div>
+                                <h2>CATERING</h2>
+                                <p>
+                                    Buffet e banchetti per matrimoni, cerimonie e eventi aziendali con le nostre specialità emiliane.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-item wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="wrap-image">
+                                <img class="lazyload" 
+                                     data-src="{{ asset('images/nuove/street_food.jpg') }}"
+                                     src="{{ asset('images/nuove/street_food.jpg') }}" 
+                                     alt="Street Food" />
+                            </div>
+                            <div class="content">
+                                <div class="icon">
+                                    <i class="icon-delivery"></i>
+                                </div>
+                                <h2>STREET FOOD</h2>
+                                <p>
+                                    Il nostro food truck porta la tradizione emiliana nelle piazze e nei mercati del territorio.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="wrap-image">
+                                <img class="lazyload" 
+                                     data-src="{{ asset('images/nuove/sagre.jpg') }}"
+                                     src="{{ asset('images/nuove/sagre.jpg') }}" 
+                                     alt="Sagre" />
+                            </div>
+                            <div class="content">
+                                <div class="icon">
+                                    <i class="icon-star"></i>
+                                </div>
+                                <h2>SAGRE</h2>
+                                <p>
+                                    Presenti alle principali sagre locali con tortelli, gnocco fritto e specialità tipiche.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-item wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="wrap-image">
+                                <img class="lazyload" 
+                                     data-src="{{ asset('images/nuove/eventi.jpg') }}"
+                                     src="{{ asset('images/nuove/eventi.jpg') }}" 
+                                     alt="Eventi" />
+                            </div>
+                            <div class="content">
+                                <div class="icon">
+                                    <i class="icon-calendar"></i>
+                                </div>
+                                <h2>EVENTI</h2>
+                                <p>
+                                    Feste private, compleanni e ricorrenze speciali con menù personalizzati su richiesta.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Section Team -->
     <section id="team" class="section-post tf-spacing-5 pt-0">
-        <div class="wrap-image">
-            <img class="lazyload" 
-                 data-src="{{ asset('images/nuove/adriano.png') }}"
-                 src="{{ asset('images/nuove/adriano.png') }}" 
-                 alt="Il nostro team" />
-        </div>
         <div class="box-post default" data-wow-delay="0.1s">
             <div class="wrap-content">
                 <div class="content wow fadeInUp">
@@ -399,161 +499,23 @@
                 </div>
             </div>
         </div>
-        <div class="box-post style-2" data-wow-delay="0.2s">
-            <div class="wrap-content">
-                <div class="wrap-image">
-                    <img class="lazyload" 
-                         data-src="{{ asset('images/nuove/menu_stagionale.png') }}"
-                         src="{{ asset('images/nuove/menu_stagionale.png') }}" 
-                         alt="Menu Stagionale" />
-                </div>
-                <div class="content wow fadeInDown">
-                    <h2 class="title">MENU STAGIONALE</h2>
-                    <p class="">
-                        Prepariamo quotidianamente pasta fresca e specialità gastronomiche seguendo il ritmo delle stagioni, 
-                        utilizzando ingredienti freschi e di qualità.
-                    </p>
-                </div>
-            </div>
+        <div class="wrap-image">
+            <img class="lazyload" 
+                 data-src="{{ asset('images/nuove/adriano.png') }}"
+                 src="{{ asset('images/nuove/adriano.png') }}" 
+                 alt="Il nostro team" />
         </div>
-        <div class="box-post style-3" data-wow-delay="0.3s">
-            <div class="wrap-content">
-                <div class="content wow fadeInUp">
-                    <h2 class="title">LA NOSTRA STORIA</h2>
-                    <p>
-                        La nostra gastronomia nasce dalla passione per le ricette tradizionali emiliane, 
-                        tramandate di generazione in generazione e preparate con ingredienti selezionati del nostro territorio.
-                    </p>
-                </div>
-                <div class="wrap-image">
-                    <img class="lazyload" 
-                         data-src="{{ asset('images/nuove/storia1.png') }}"
-                         src="{{ asset('images/nuove/storia1.png') }}" 
-                         alt="La nostra storia" />
-                </div>
-            </div>
+        <div class="wrap-image">
+            <img class="lazyload" 
+                 data-src="{{ asset('images/nuove/staff.jpg') }}"
+                 src="{{ asset('images/nuove/staff.jpg') }}" 
+                 alt="Il nostro team" />
         </div>
-    </section>
-
-    <!-- Section Testimonials -->
-    <section class="section-testimonial tf-spacing-6">
-        <div class="swiper-container slide-testimonials">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="testimonial-item">
-                        <div class="icon wow fadeInUp">
-                            <img src="{{ asset('icons/blockquote.svg') }}" alt="">
-                        </div>
-                        <p class="paragraph wow fadeInUp">
-                            Ordiniamo sempre la pasta fresca da Tortelliamo per le cene in famiglia e non siamo mai delusi! 
-                            I tortelli di zucca e i cappelletti in brodo sono semplicemente ECCEZIONALI! Ottimo lavoro. 
-                            Sicuramente torneremo presto per provare le altre specialità che preparate con tanta passione e tradizione!
-                        </p>
-                        <h5 class="wow fadeInUp"><a href="#">MARCO BIANCHI</a></h5>
-                        <div class="rating wow fadeInUp">
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="testimonial-item">
-                        <div class="icon wow fadeInUp">
-                            <img src="{{ asset('icons/blockquote.svg') }}" alt="">
-                        </div>
-                        <p class="paragraph wow fadeInUp">
-                            La qualità dei prodotti è eccellente! La pasta fresca è sempre perfetta e le lasagne sono divine. 
-                            Il servizio di consegna è puntuale e il personale molto gentile. Consigliatissimo!
-                        </p>
-                        <h5 class="wow fadeInUp"><a href="#">GIULIA ROSSI</a></h5>
-                        <div class="rating wow fadeInUp">
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-next button section-testimonial-next">
-                <i class="icon-arrow-draw"></i>
-            </div>
-            <div class="swiper-button-prev button section-testimonial-prev">
-                <i class="icon-arrow-draw"></i>
-            </div>
-        </div>
-        <div class="wrap-service-item">
-            <div class="swiper-container slide-layout-3 mb-0">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="service-item wow fadeInUp">
-                            <div class="wrap-image">
-                                <img class="lazyload" 
-                                     data-src="{{ asset('images/nuove/tradizione.png') }}"
-                                     src="{{ asset('images/nuove/tradizione.png') }}" 
-                                     alt="Tradizione" />
-                            </div>
-                            <div class="content">
-                                <div class="icon">
-                                    <i class="icon-croissant"></i>
-                                </div>
-                                <h2>IL GUSTO DELLA TRADIZIONE</h2>
-                                <p>
-                                    Da generazioni, la nostra passione per la pasta fresca continua immutata, 
-                                    utilizzando solo ingredienti genuini e ricette tradizionali.
-                                </p>
-                                <a class="tf-btn-default" href="#">SCOPRI DI PIÙ<i class="icon-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="wrap-image">
-                                <img class="lazyload" 
-                                     data-src="{{ asset('images/nuove/consegna.png') }}"
-                                     src="{{ asset('images/nuove/consegna.png') }}" 
-                                     alt="Consegna" />
-                            </div>
-                            <div class="content">
-                                <div class="icon">
-                                    <i class="icon-shopping-bag"></i>
-                                </div>
-                                <h2>CONSEGNA GRATUITA</h2>
-                                <p>
-                                    Ordina online o telefonicamente e ricevi i nostri prodotti freschi direttamente a casa tua, 
-                                    con consegna gratuita nel comune di Novellara.
-                                </p>
-                                <a class="tf-btn-default" href="#">SCOPRI DI PIÙ<i class="icon-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="wrap-image">
-                                <img class="lazyload" 
-                                     data-src="{{ asset('images/section/service3.jpg') }}"
-                                     src="{{ asset('images/section/service3.jpg') }}" 
-                                     alt="Novità" />
-                            </div>
-                            <div class="content">
-                                <div class="icon">
-                                    <i class="icon-blog"></i>
-                                </div>
-                                <h2>ULTIME NOVITÀ</h2>
-                                <p>
-                                    Seguici sui nostri canali social per scoprire le novità e le specialità stagionali 
-                                    che prepariamo ogni giorno.
-                                </p>
-                                <a class="tf-btn-default" href="#">SCOPRI DI PIÙ<i class="icon-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="wrap-image">
+            <img class="lazyload" 
+                 data-src="{{ asset('images/nuove/staff1.jpg') }}"
+                 src="{{ asset('images/nuove/staff1.jpg') }}" 
+                 alt="Il nostro team" />
         </div>
     </section>
 

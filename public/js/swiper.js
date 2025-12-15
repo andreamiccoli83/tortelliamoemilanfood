@@ -200,6 +200,27 @@ if ($(".slide-layout-3").length > 0) {
     });
 }
 
+if ($(".slide-layout-4").length > 0) {
+    var swiper = new Swiper(".slide-layout-4", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        breakpoints: {
+            0: {
+                slidesPerView: 1.2,
+            },
+            400: {
+                slidesPerView: 1.5,
+            },
+            767: {
+                slidesPerView: 2.5,
+            },
+            991: {
+                slidesPerView: 4,
+            },
+        },
+    });
+}
+
 if ($(".thumbs-slider").length > 0) {
     var direction = $(".tf-product-media-thumbs").data("direction");
     var thumbs = new Swiper(".tf-product-media-thumbs", {
