@@ -58,7 +58,7 @@
     <section id="benvenuti" class="section-welcome section-pasta-fresca pt-0" style="padding-bottom: 60px;">
         <div class="tf-container w-1550">
             <!-- Titolo centrato con Adriano a destra -->
-            <div class="row">
+            <div class="row" style="margin-bottom: 50px;">
                 <div class="col-12">
                     <div class="heading-section text-center" style="position: relative;">
                         <p class="sub-title wow fadeInUp">Tradizione guardando all'innovazione</p>
@@ -72,11 +72,31 @@
                 </div>
             </div>
             
+            <style>
+                .pasta-grid-fix {
+                    display: grid !important;
+                    grid-template-columns: repeat(2, 1fr) !important;
+                    grid-template-rows: repeat(2, 1fr) !important;
+                    gap: 8px !important;
+                    height: 400px !important;
+                    width: 100% !important;
+                }
+                .pasta-grid-fix .pasta-grid-item {
+                    overflow: hidden;
+                    border-radius: 8px;
+                }
+                .pasta-grid-fix .pasta-grid-item img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            </style>
+            
             <!-- Layout 3 colonne -->
-            <div class="row align-items-center">
+            <div class="row align-items-center justify-content-center">
                 <!-- Colonna 1: Griglia 4 foto (2x2) -->
                 <div class="col-lg-4">
-                    <div class="pasta-grid pasta-grid-4 wow fadeInLeft" data-wow-duration="2s">
+                    <div class="pasta-grid-fix wow fadeInLeft" data-wow-duration="2s">
                         <div class="pasta-grid-item">
                             <img src="{{ asset('images/nuove/pasta_fresca/cappelletti.jpg') }}" alt="Cappelletti">
                         </div>
@@ -105,22 +125,22 @@
                 <!-- Colonna 3: Testo descrittivo -->
                 <div class="col-lg-4">
                     <div class="pasta-content">
-                        <p class="desc wow fadeInUp">
+                        <p class="desc wow fadeInUp" style="font-size: 15px; line-height: 1.7; margin-bottom: 15px;">
                             Non esistono innovazioni senza tradizione. L'innovazione non esclude la tradizione.
                             La nostra pasta è fatta tutti i giorni con prodotti genuini: uova fresche pastorizzate 
                             e soprattutto prodotti locali, quando possibile a km 0.
                         </p>
-                        <p class="desc wow fadeInUp" data-wow-delay="0.2s">
+                        <p class="desc wow fadeInUp" data-wow-delay="0.2s" style="font-size: 15px; line-height: 1.7; margin-bottom: 20px;">
                             Utilizziamo la pastorizzazione del prodotto per garantire la conservazione 
                             e mantenere la freschezza.
                         </p>
-                        <ul class="pasta-types wow fadeInUp" data-wow-delay="0.4s">
-                            <li><strong>Pasta ripiena:</strong> tortelli, cappelletti</li>
-                            <li><strong>Pasta al forno:</strong> lasagne, rosette, crespelle</li>
-                            <li><strong>Pasta lunga:</strong> tagliatelle, tagliolini</li>
-                            <li><strong>Pasta al torchio:</strong> gramigna, bigoli, passatelli</li>
-                            <li><strong>Pasta fresca:</strong> gnocchi</li>
-                            <li><strong>Pasta vegana</strong></li>
+                        <ul class="pasta-types wow fadeInUp" data-wow-delay="0.4s" style="list-style: none; padding: 0;">
+                            <li style="padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.1);"><strong>Pasta ripiena:</strong> tortelli, cappelletti</li>
+                            <li style="padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.1);"><strong>Pasta al forno:</strong> lasagne, rosette, crespelle</li>
+                            <li style="padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.1);"><strong>Pasta lunga:</strong> tagliatelle, tagliolini</li>
+                            <li style="padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.1);"><strong>Pasta al torchio:</strong> gramigna, bigoli, passatelli</li>
+                            <li style="padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.1);"><strong>Pasta fresca:</strong> gnocchi</li>
+                            <li style="padding: 8px 0;"><strong>Pasta vegana</strong></li>
                         </ul>
                     </div>
                 </div>
@@ -380,9 +400,14 @@
     <section id="servizi" class="section-testimonial tf-spacing-6">
         <!-- Titolo sezione -->
         <div class="tf-container">
-            <div class="heading-section text-center wow fadeInUp" style="margin-bottom: 50px;">
+            <div class="heading-section text-center wow fadeInUp" style="margin-bottom: 50px; position: relative;">
                 <p class="sub-title">COSA FACCIAMO</p>
-                <div class="title text-4">I NOSTRI SERVIZI</div>
+                <div class="title text-4" style="position: relative; display: inline-block;">
+                    <img src="{{ asset('images/nuove/adriano_servizi.png') }}" 
+                         alt="Adriano" 
+                         style="height: 150px; width: auto; position: absolute; right: 100%; top: 50%; transform: translateY(-50%); margin-right: 15px;">
+                    I NOSTRI SERVIZI
+                </div>
             </div>
         </div>
         
@@ -411,11 +436,11 @@
                             </div>
                             <div class="content">
                                 <div class="icon">
-                                    <i class="icon-dish"></i>
+                                    <i class="icon-serving-dish"></i>
                                 </div>
                                 <h2>CATERING</h2>
                                 <p>
-                                    Buffet e banchetti per matrimoni, cerimonie e eventi aziendali con le nostre specialità emiliane.
+                                    Buffet e banchetti per matrimoni,<br>cerimonie e eventi aziendali.
                                 </p>
                             </div>
                         </div>
@@ -430,11 +455,11 @@
                             </div>
                             <div class="content">
                                 <div class="icon">
-                                    <i class="icon-delivery"></i>
+                                    <i class="icon-shopping-bag"></i>
                                 </div>
                                 <h2>STREET FOOD</h2>
                                 <p>
-                                    Il nostro food truck porta la tradizione emiliana nelle piazze e nei mercati del territorio.
+                                    Il nostro food truck porta la tradizione<br>emiliana nelle piazze e mercati.
                                 </p>
                             </div>
                         </div>
@@ -453,7 +478,7 @@
                                 </div>
                                 <h2>SAGRE</h2>
                                 <p>
-                                    Presenti alle principali sagre locali con tortelli, gnocco fritto e specialità tipiche.
+                                    Presenti alle sagre locali con tortelli,<br>gnocco fritto e specialità tipiche.
                                 </p>
                             </div>
                         </div>
@@ -468,11 +493,11 @@
                             </div>
                             <div class="content">
                                 <div class="icon">
-                                    <i class="icon-calendar"></i>
+                                    <i class="icon-cake"></i>
                                 </div>
                                 <h2>EVENTI</h2>
                                 <p>
-                                    Feste private, compleanni e ricorrenze speciali con menù personalizzati su richiesta.
+                                    Feste private, compleanni e ricorrenze<br>con menù personalizzati su richiesta.
                                 </p>
                             </div>
                         </div>
@@ -488,7 +513,7 @@
             <div class="wrap-content">
                 <div class="content wow fadeInUp">
                     <div class="icon">
-                        <img src="{{ asset('icons/icon-post.svg') }}" alt="">
+                        <img src="{{ asset('images/nuove/adriano_team.png') }}" alt="Adriano" style="height: 150px; width: auto;">
                     </div>
                     <h2 class="title">IL NOSTRO TEAM</h2>
                     <p class="decs">
@@ -533,9 +558,14 @@
                 </div>
                 <div class="col-xl-4">
                     <div class="content">
-                        <div class="heading-section wow fadeInUp">
+                        <div class="heading-section text-center wow fadeInUp" style="position: relative;">
                             <div class="sub-title">DOVE TROVARCI</div>
-                            <div class="title text-4">COME RAGGIUNGERCI?</div>
+                            <div class="title text-4" style="position: relative; display: inline-block;">
+                                <img src="{{ asset('images/nuove/adriano_dove_siamo.png') }}" 
+                                     alt="Adriano" 
+                                     style="height: 150px; width: auto; position: absolute; right: 100%; top: 50%; transform: translateY(-50%); margin-right: 15px;">
+                                COME RAGGIUNGERCI?
+                            </div>
                             <p>
                                 Goditi un piatto di pasta fresca, una specialità gastronomica o un buon bicchiere di vino
                                 in un'atmosfera accogliente. I nostri artigiani hanno creato un universo di delizie

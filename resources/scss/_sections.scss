@@ -1,3 +1,8 @@
+/* Scroll offset per header fisso */
+section[id] {
+    scroll-margin-top: 100px;
+}
+
 .tf-spacing-1 {
     padding-top: 0;
     padding-bottom: 130px;
