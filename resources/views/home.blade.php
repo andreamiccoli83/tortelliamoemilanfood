@@ -191,41 +191,8 @@
                             <div class="our-menu-item hover-img wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="wrap-image">
                                     <img class="lazyload" 
-                                         data-src="{{ asset('images/nuove/banco5.jpg') }}"
-                                         src="{{ asset('images/nuove/banco5.jpg') }}" 
-                                         alt="Gastronomia" />
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Slide 4 (duplicato) -->
-                        <div class="swiper-slide">
-                            <div class="our-menu-item hover-img wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="wrap-image">
-                                    <img class="lazyload" 
-                                         data-src="{{ asset('images/nuove/banco3.jpg') }}"
-                                         src="{{ asset('images/nuove/banco3.jpg') }}" 
-                                         alt="Gastronomia" />
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Slide 5 (duplicato) -->
-                        <div class="swiper-slide">
-                            <div class="our-menu-item hover-img wow fadeInUp" data-wow-delay="0.4s">
-                                <div class="wrap-image">
-                                    <img class="lazyload" 
-                                         data-src="{{ asset('images/nuove/banco4.jpg') }}"
-                                         src="{{ asset('images/nuove/banco4.jpg') }}" 
-                                         alt="Gastronomia" />
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Slide 6 (duplicato) -->
-                        <div class="swiper-slide">
-                            <div class="our-menu-item hover-img mb-0 wow fadeInUp" data-wow-delay="0.5s">
-                                <div class="wrap-image">
-                                    <img class="lazyload" 
-                                         data-src="{{ asset('images/nuove/banco5.jpg') }}"
-                                         src="{{ asset('images/nuove/banco5.jpg') }}" 
+                                         data-src="{{ asset('images/nuove/banco2.jpg') }}"
+                                         src="{{ asset('images/nuove/banco2.jpg') }}" 
                                          alt="Gastronomia" />
                                 </div>
                             </div>
@@ -247,13 +214,13 @@
                     <div class="wrap-image">
                         <div class="image">
                             <img class="lazyload" 
-                                 data-src="{{ asset('images/nuove/banco2.jpg') }}"
-                                 src="{{ asset('images/nuove/banco2.jpg') }}" 
+                                 data-src="{{ asset('images/nuove/dada.jpg') }}"
+                                 src="{{ asset('images/nuove/dada.jpg') }}" 
                                  alt="Sicurezza Alimentare" />
                         </div>
-                        <div class="item1 wow rotateIn" data-wow-duration="2s">
-                            <img src="{{ asset('images/nuove/passatelli.png') }}" alt="Passatelli">
-                        </div>
+                       {{--  <div class="item1 wow rotateIn" data-wow-duration="2s">
+                            <img src="{{ asset('images/nuove/cesto.png') }}" alt="cesto" style="width: 355px; height: 355px; object-fit: contain;">
+                        </div> --}}
                     </div>
                 </div>
                 <div class="col-sm-6">
