@@ -55,13 +55,13 @@
 <div class="main-content home-page">
     
     <!-- Section Welcome - La Nostra Pasta Fresca -->
-    <section id="benvenuti" class="section-welcome section-pasta-fresca pt-0" style="padding-bottom: 60px;">
+    <section id="benvenuti" class="section-welcome section-pasta-fresca" style="padding-top: 100px; padding-bottom: 60px;">
         <div class="tf-container w-1550">
             <!-- Titolo centrato con Adriano a destra -->
             <div class="row" style="margin-bottom: 50px;">
                 <div class="col-12">
                     <div class="heading-section text-center" style="position: relative;">
-                        <p class="sub-title wow fadeInUp">Tradizione guardando all'innovazione</p>
+                        <p class="sub-title wow fadeInUp">TRADIZIONE GUARDANDO ALL'INNOVAZIONE</p>
                         <div class="title text-4 wow fadeInUp" style="position: relative; display: inline-block;">
                             <img src="{{ asset('images/nuove/adriano_destra.png') }}" 
                                  alt="Adriano" 
@@ -512,8 +512,10 @@
         <div class="box-post default" data-wow-delay="0.1s">
             <div class="wrap-content">
                 <div class="content wow fadeInUp">
-                    <div class="icon">
-                        <img src="{{ asset('images/nuove/adriano_team.png') }}" alt="Adriano" style="height: 150px; width: auto;">
+                    <div style="margin-bottom: 20px;">
+                        <img src="{{ asset('images/nuove/adriano_team.png') }}" 
+                             alt="Adriano" 
+                             style="height: 150px; width: auto;">
                     </div>
                     <h2 class="title">IL NOSTRO TEAM</h2>
                     <p class="decs">
@@ -545,7 +547,7 @@
     </section>
 
     <!-- Section Location/Contact -->
-    <section id="contatti" class="section-location tf-spacing-2 pt-0">
+    <section id="contatti" class="section-location" style="padding-top: 150px; padding-bottom: 135px;">
         <div class="tf-container w-1550">
             <div class="row">
                 <div class="col-xl-4">
@@ -594,10 +596,10 @@
                 <div class="col-xl-4">
                     <div class="map-box relative h-full wow fadeInRight">
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.8!2d10.7333!3d44.8500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478014e0a0a0a0a0%3A0x0!2sPiazza%20Cesare%20Battisti%203%2C%20Novellara%2C%20RE!5e0!3m2!1sit!2sit!4v1234567890" 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.8814814289476!2d10.728671999899326!3d44.84434694214133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47802093c72814e7%3A0xb918086d60542d3!2sPiazza%20Cesare%20Battisti%2C%203%2C%2042017%20Novellara%20RE!5e0!3m2!1sit!2sit!4v1765827970945!5m2!1sit!2sit" 
                             width="100%" 
                             height="100%" 
-                            style="border:0; min-height: 400px;" 
+                            style="border:0; min-height: 400px; border-radius: 50%;" 
                             allowfullscreen="" 
                             loading="lazy" 
                             referrerpolicy="no-referrer-when-downgrade">
