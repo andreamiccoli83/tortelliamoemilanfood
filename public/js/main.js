@@ -25,6 +25,26 @@
         }, 1000);
     };
 
+    // Service gallery (Catering)
+    var serviceGallery = function () {
+        // cursore indicativo
+        $('.service-item[data-gallery="catering"]').css('cursor', 'zoom-in');
+        // delega per funzionare anche con elementi clonati/ricreati da Swiper
+        $(document).on('click', '.service-item[data-gallery="catering"]', function (e) {
+            e.preventDefault();
+            $.magnificPopup.open({
+                items: [
+                    { src: '/images/nuove/buffet.jpg' },
+                    { src: '/images/nuove/banco3.jpg' },
+                    { src: '/images/nuove/banco4.jpg' }
+                ],
+                type: 'image',
+                gallery: { enabled: true },
+                mainClass: 'mfp-fade'
+            });
+        });
+    };
+
     // headerFixed
     var headerFixed = function () {
         if ($("header").hasClass("header-fixed")) {
@@ -416,6 +436,7 @@
         styleShop();
         btnQuantity();
         infiniteScroll();
+        serviceGallery();
         goTop();
     });
 })(jQuery);

@@ -25,7 +25,7 @@
                                     </div>
                                     <div class="fade-item fade-item2">
                                         <div class="sub-title text-1">
-                                            Gastronomia Novellara
+                                            Ciao sono Adriano
                                         </div>
                                         <div class="under-line">
                                             <img class="lazyload" 
@@ -34,10 +34,11 @@
                                                  alt="">
                                         </div>
                                     </div>
-                                    <h1 class="title fade-item fade-item3">
+                                    <h1 class="title fade-item fade-item3 mb-0">
                                         BENVENUTI <br>
                                         DA TORTELLIAMO
                                     </h1>
+                                    <p class="sub-title text-1 fade-item fade-item3 mb-0">Gastronomia a Novellara</p>
                                 </div>
                             </div>
                         </div>
@@ -61,13 +62,12 @@
             <div class="row" style="margin-bottom: 50px;">
                 <div class="col-12">
                     <div class="heading-section text-center" style="position: relative;">
+                        <img src="{{ asset('images/nuove/adriano_impasta.png') }}" 
+                             alt="Adriano" 
+                             class="wow fadeInDown"
+                             style="height: 150px; width: auto; margin-bottom: 10px;">
                         <p class="sub-title wow fadeInUp">TRADIZIONE GUARDANDO ALL'INNOVAZIONE</p>
-                        <div class="title text-4 wow fadeInUp" style="position: relative; display: inline-block;">
-                            <img src="{{ asset('images/nuove/adriano_destra.png') }}" 
-                                 alt="Adriano" 
-                                 style="height: 150px; width: auto; position: absolute; right: 100%; top: 50%; transform: translateY(-50%); margin-right: 15px;">
-                            LA NOSTRA PASTA FRESCA
-                        </div>
+                        <div class="title text-4 wow fadeInUp">LA NOSTRA PASTA FRESCA</div>
                     </div>
                 </div>
             </div>
@@ -167,13 +167,12 @@
             <div class="row">
                 <div class="col-12">
                     <div class="heading-section text-center" style="position: relative;">
+                        <img src="{{ asset('images/nuove/adriano_chiude_cappelletti.png') }}" 
+                             alt="Adriano" 
+                             class="wow fadeInDown"
+                             style="height: 150px; width: auto; margin-bottom: 10px;">
                         <p class="sub-title wow fadeInUp">TUTTI I GIORNI</p>
-                        <div class="title text-4 wow fadeInUp" style="position: relative; display: inline-block;">
-                            <img src="{{ asset('images/nuove/adriano_destra.png') }}" 
-                                 alt="Adriano" 
-                                 style="height: 150px; width: auto; position: absolute; right: 100%; top: 50%; transform: translateY(-50%); margin-right: 15px;">
-                            GASTRONOMIA
-                        </div>
+                        <div class="title text-4 wow fadeInUp">GASTRONOMIA</div>
                     </div>
                     <!-- Punti chiave visibili -->
                     <ul class="list-check wow fadeInUp" style="margin-top: 20px; margin-bottom: 30px;">
@@ -401,13 +400,12 @@
         <!-- Titolo sezione -->
         <div class="tf-container">
             <div class="heading-section text-center wow fadeInUp" style="margin-bottom: 50px; position: relative;">
+                <img src="{{ asset('images/nuove/adriano_servizi.png') }}" 
+                     alt="Adriano" 
+                     class="wow fadeInDown"
+                     style="height: 150px; width: auto; margin-bottom: 10px;">
                 <p class="sub-title">COSA FACCIAMO</p>
-                <div class="title text-4" style="position: relative; display: inline-block;">
-                    <img src="{{ asset('images/nuove/adriano_servizi.png') }}" 
-                         alt="Adriano" 
-                         style="height: 150px; width: auto; position: absolute; right: 100%; top: 50%; transform: translateY(-50%); margin-right: 15px;">
-                    I NOSTRI SERVIZI
-                </div>
+                <div class="title text-4">I NOSTRI SERVIZI</div>
             </div>
         </div>
         
@@ -427,11 +425,11 @@
             <div class="swiper-container slide-layout-4 mb-0">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="service-item wow fadeInUp">
+                        <div class="service-item wow fadeInUp swiper-no-swiping" data-gallery="catering" role="button" aria-label="Apri galleria Catering">
                             <div class="wrap-image">
                                 <img class="lazyload" 
-                                     data-src="{{ asset('images/nuove/buffet.JPG') }}"
-                                     src="{{ asset('images/nuove/buffet.JPG') }}" 
+                                     data-src="{{ asset('images/nuove/buffet.jpg') }}"
+                                     src="{{ asset('images/nuove/buffet.jpg') }}" 
                                      alt="Catering" />
                             </div>
                             <div class="content">
@@ -561,13 +559,12 @@
                 <div class="col-xl-4">
                     <div class="content">
                         <div class="heading-section text-center wow fadeInUp" style="position: relative;">
+                            <img src="{{ asset('images/nuove/adriano_dove_siamo.png') }}" 
+                                 alt="Adriano" 
+                                 class="wow fadeInDown"
+                                 style="height: 150px; width: auto; margin-bottom: 10px;">
                             <div class="sub-title">DOVE TROVARCI</div>
-                            <div class="title text-4" style="position: relative; display: inline-block;">
-                                <img src="{{ asset('images/nuove/adriano_dove_siamo.png') }}" 
-                                     alt="Adriano" 
-                                     style="height: 150px; width: auto; position: absolute; right: 100%; top: 50%; transform: translateY(-50%); margin-right: 15px;">
-                                COME RAGGIUNGERCI?
-                            </div>
+                            <div class="title text-4">COME RAGGIUNGERCI?</div>
                             <p>
                                 Goditi un piatto di pasta fresca, una specialità gastronomica o un buon bicchiere di vino
                                 in un'atmosfera accogliente. I nostri artigiani hanno creato un universo di delizie
