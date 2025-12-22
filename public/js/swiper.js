@@ -211,10 +211,10 @@ if ($(".slide-layout-4").length > 0) {
         breakpoints: {
             0: {
                 slidesPerView: 1,
-                spaceBetween: 15,
+                spaceBetween: 20,
                 centeredSlides: false,
             },
-            400: {
+            576: {
                 slidesPerView: 1.3,
                 spaceBetween: 15,
             },

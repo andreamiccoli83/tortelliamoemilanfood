@@ -593,10 +593,14 @@
                  alt="Il nostro team" />
         </div>
         <div class="wrap-image">
-            <img class="lazyload" 
-                 data-src="{{ asset('images/nuove/team02.jpg') }}"
-                 src="{{ asset('images/nuove/team02.jpg') }}" 
-                 alt="Il nostro team" />
+            <picture>
+                <source media="(max-width: 767px)" 
+                        srcset="{{ asset('images/nuove/team02_mobile.jpg') }}">
+                <img class="lazyload" 
+                     data-src="{{ asset('images/nuove/team02.jpg') }}"
+                     src="{{ asset('images/nuove/team02.jpg') }}" 
+                     alt="Il nostro team" />
+            </picture>
         </div>
         <div class="wrap-image">
             <img class="lazyload" 
