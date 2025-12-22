@@ -285,6 +285,14 @@
                     .find(".mobile-nav-wrap")
                     .toggleClass("active");
             });
+            
+            // Chiudi menu mobile quando si clicca su un link
+            $(".mobile-nav-wrap .item-menu-mobile").on("click", function () {
+                $(this)
+                    .closest("#header-main")
+                    .find(".mobile-nav-wrap")
+                    .removeClass("active");
+            });
 
             $(document).on(
                 "click",

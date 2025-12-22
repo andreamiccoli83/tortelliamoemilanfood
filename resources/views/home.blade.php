@@ -152,10 +152,28 @@
                         <div class="title text-4 wow fadeInUp">GASTRONOMIA</div>
                     </div>
                     <!-- Punti chiave visibili -->
-                    <ul class="list-check wow fadeInUp" style="margin-top: 20px; margin-bottom: 30px;">
-                        <li><i class="icon-check1"></i> <strong>PIATTI PRONTI</strong> - Pasto completo dagli antipasti ai dolci, da gustare e da asporto</li>
-                        <li><i class="icon-check1"></i> <strong>CONSUMO SUL POSTO</strong> - Vieni a trovarci per un pranzo veloce o una pausa gustosa</li>
-                        <li><i class="icon-check1"></i> <strong>ORDINA SU WHATSAPP</strong> - Prenota i tuoi piatti preferiti e ritirali quando vuoi</li>
+                    <ul class="list-check gastronomia-list wow fadeInUp" style="margin-top: 20px; margin-bottom: 30px;">
+                        <li>
+                            <i class="icon-check1"></i> 
+                            <div>
+                                <strong>PIATTI PRONTI</strong><br>
+                                Pasto completo dagli antipasti ai dolci, da gustare e da asporto
+                            </div>
+                        </li>
+                        <li>
+                            <i class="icon-check1"></i> 
+                            <div>
+                                <strong>CONSUMO SUL POSTO</strong><br>
+                                Vieni a trovarci per un pranzo veloce o una pausa gustosa
+                            </div>
+                        </li>
+                        <li>
+                            <i class="icon-check1"></i> 
+                            <div>
+                                <strong>ORDINA SU WHATSAPP</strong><br>
+                                Prenota i tuoi piatti preferiti e ritirali quando vuoi
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="swiper-container slide-our-menu">
@@ -206,20 +224,7 @@
     <section class="section-why tf-spacing-18 pt-0">
         <div class="tf-container">
             <div class="row">
-                <div class="col-sm-6">
-                    <div class="wrap-image">
-                        <div class="image">
-                            <img class="lazyload" 
-                                 data-src="{{ asset('images/nuove/prodotti.jpg') }}"
-                                 src="{{ asset('images/nuove/prodotti.jpg') }}" 
-                                 alt="Sicurezza Alimentare" />
-                        </div>
-                       {{--  <div class="item1 wow rotateIn" data-wow-duration="2s">
-                            <img src="{{ asset('images/nuove/cesto.png') }}" alt="cesto" style="width: 355px; height: 355px; object-fit: contain;">
-                        </div> --}}
-                    </div>
-                </div>
-                <div class="col-sm-6">
+                <div class="col-12">
                     <div class="content">
                         <div class="heading-section">
                             <img src="{{ asset('images/nuove/adriano_buono.png') }}" 
@@ -274,6 +279,16 @@
                                 </div>
                                 <p>CLIENTI SODDISFATTI</p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12" style="margin-top: 40px;">
+                    <div class="wrap-image">
+                        <div class="image">
+                            <img class="lazyload" 
+                                 data-src="{{ asset('images/nuove/prodotti.jpg') }}"
+                                 src="{{ asset('images/nuove/prodotti.jpg') }}" 
+                                 alt="Sicurezza Alimentare" />
                         </div>
                     </div>
                 </div>

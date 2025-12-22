@@ -92,48 +92,65 @@
             </div>
         </div>
     </div>
-</header>
-
-<!-- Mobile Menu -->
-<div class="mobile-nav-wrap">
-    <div class="overlay-mobile-nav"></div>
-    <div class="inner-mobile-nav">
-        <div class="top-nav-mobile">
-            <a href="{{ route('home') }}" rel="home" class="main-logo">
-                <img id="mobile-logo_header" 
-                     alt="Tortelliamo" 
-                     src="{{ asset('images/logo/logo_tortelliamo.png') }}"
-                     data-retina="{{ asset('images/logo/logo_tortelliamo.png') }}">
-            </a>
-            <div class="mobile-nav-close">
-                <i class="icon-close"></i>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-nav-wrap">
+        <div class="overlay-mobile-nav"></div>
+        <div class="inner-mobile-nav">
+            <div class="top-nav-mobile">
+                <a href="{{ route('home') }}" rel="home" class="main-logo">
+                    <img id="mobile-logo_header" 
+                         alt="Tortelliamo" 
+                         src="{{ asset('images/logo/logo_tortelliamo.png') }}"
+                         data-retina="{{ asset('images/logo/logo_tortelliamo.png') }}">
+                </a>
+                <div class="mobile-nav-close">
+                    <i class="icon-close"></i>
+                </div>
+            </div>
+            
+            <!-- Info contatti nel menu mobile -->
+            <div class="mobile-info-section">
+                <div class="mobile-info-item">
+                    <i class="icon-location"></i>
+                    <span>Piazza Cesare Battisti 3, Novellara, RE</span>
+                </div>
+                <div class="mobile-info-item">
+                    <i class="icon-clock2"></i>
+                    <span>Lun - Dom 9:00 - 14:00, 16:00 - 20:00</span>
+                </div>
+                <div class="mobile-info-item">
+                    <i class="icon-old-phone"></i>
+                    <span>320 862 6210</span>
+                </div>
+            </div>
+            
+            <nav id="mobile-main-nav" class="mobile-main-nav">
+                <ul id="menu-mobile-menu" class="menu">
+                    <li class="menu-item">
+                        <a class="item-menu-mobile" href="#benvenuti">PASTA FRESCA</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="item-menu-mobile" href="#prodotti">GASTRONOMIA</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="item-menu-mobile" href="#acquista">ACQUISTA</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="item-menu-mobile" href="#servizi">SERVIZI</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="item-menu-mobile" href="#contatti">DOVE SIAMO</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-footer">
+                <ul class="tf-social-icon">
+                    <li><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="icon-instagram2"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="icon-tiktok"></i></a></li>
+                </ul>
             </div>
         </div>
-        <nav id="mobile-main-nav" class="mobile-main-nav">
-            <ul id="menu-mobile-menu" class="menu">
-                <li class="menu-item">
-                    <a class="item-menu-mobile" href="#benvenuti">PASTA FRESCA</a>
-                </li>
-                <li class="menu-item">
-                    <a class="item-menu-mobile" href="#prodotti">GASTRONOMIA</a>
-                </li>
-                <li class="menu-item">
-                    <a class="item-menu-mobile" href="#acquista">ACQUISTA</a>
-                </li>
-                <li class="menu-item">
-                    <a class="item-menu-mobile" href="#servizi">SERVIZI</a>
-                </li>
-                <li class="menu-item">
-                    <a class="item-menu-mobile" href="#contatti">DOVE SIAMO</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="mobile-footer">
-            <ul class="tf-social-icon">
-                <li><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
-                <li><a href="#" target="_blank"><i class="icon-instagram2"></i></a></li>
-                <li><a href="#" target="_blank"><i class="icon-tiktok"></i></a></li>
-            </ul>
-        </div>
     </div>
-</div>
+</header>
