@@ -25,18 +25,115 @@
         }, 1000);
     };
 
-    // Service gallery (Catering)
+    // Service gallery (Catering + altre gallerie servizi)
     var serviceGallery = function () {
-        // cursore indicativo
-        $('.service-item[data-gallery="catering"]').css('cursor', 'zoom-in');
-        // delega per funzionare anche con elementi clonati/ricreati da Swiper
-        $(document).on('click', '.service-item[data-gallery="catering"]', function (e) {
+        // Catering
+        $(document).off('click.openCatering');
+        $(document).on('click.openCatering', '.open-catering-gallery', function (e) {
             e.preventDefault();
+            e.stopPropagation();
             $.magnificPopup.open({
                 items: [
-                    { src: '/images/nuove/buffet.jpg' },
-                    { src: '/images/nuove/banco3.jpg' },
-                    { src: '/images/nuove/banco4.jpg' }
+                    { src: '/images/nuove/catering/catering1.jpg' },
+                    { src: '/images/nuove/catering/catering2.jpg' },
+                    { src: '/images/nuove/catering/catering3.jpg' },
+                    { src: '/images/nuove/catering/catering4.jpg' },
+                    { src: '/images/nuove/catering/catering5.jpg' },
+                    { src: '/images/nuove/catering/catering6.jpg' },
+                    { src: '/images/nuove/catering/catering7.jpg' },
+                    { src: '/images/nuove/catering/catering8.jpg' },
+                    { src: '/images/nuove/catering/catering9.jpg' },
+                    { src: '/images/nuove/catering/catering10.jpg' },
+                    { src: '/images/nuove/catering/catering11.jpg' },
+                    { src: '/images/nuove/catering/catering12.jpg' }
+                ],
+                type: 'image',
+                gallery: { enabled: true },
+                mainClass: 'mfp-fade'
+            });
+        });
+
+        // Street Food (jpeg)
+        $(document).off('click.openStreetfood');
+        $(document).on('click.openStreetfood', '.open-streetfood-gallery', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $.magnificPopup.open({
+                items: [
+                    { src: '/images/nuove/streetfood/streetfood_1.jpeg' },
+                    { src: '/images/nuove/streetfood/streetfood_2.jpeg' },
+                    { src: '/images/nuove/streetfood/streetfood_3.jpeg' },
+                    { src: '/images/nuove/streetfood/streetfood_4.jpeg' },
+                    { src: '/images/nuove/streetfood/streetfood_5.jpeg' },
+                    { src: '/images/nuove/streetfood/streetfood_6.jpeg' }
+                ],
+                type: 'image',
+                gallery: { enabled: true },
+                mainClass: 'mfp-fade'
+            });
+        });
+
+        // Sagre
+        $(document).off('click.openSagre');
+        $(document).on('click.openSagre', '.open-sagre-gallery', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $.magnificPopup.open({
+                items: [
+                    { src: '/images/nuove/sagre/sagra1.jpg' },
+                    { src: '/images/nuove/sagre/sagra2.jpg' },
+                    { src: '/images/nuove/sagre/sagra3.jpg' },
+                    { src: '/images/nuove/sagre/sagra4.jpg' }
+                ],
+                type: 'image',
+                gallery: { enabled: true },
+                mainClass: 'mfp-fade'
+            });
+        });
+
+        // Eventi (1..15)
+        $(document).off('click.openEventi');
+        $(document).on('click.openEventi', '.open-eventi-gallery', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $.magnificPopup.open({
+                items: [
+                    { src: '/images/nuove/eventi/eventi1.jpg' },
+                    { src: '/images/nuove/eventi/eventi2.jpg' },
+                    { src: '/images/nuove/eventi/eventi3.jpg' },
+                    { src: '/images/nuove/eventi/eventi4.jpg' },
+                    { src: '/images/nuove/eventi/eventi5.jpg' },
+                    { src: '/images/nuove/eventi/eventi6.jpg' },
+                    { src: '/images/nuove/eventi/eventi7.jpg' },
+                    { src: '/images/nuove/eventi/eventi8.jpg' },
+                    { src: '/images/nuove/eventi/eventi9.jpg' },
+                    { src: '/images/nuove/eventi/eventi10.jpg' },
+                    { src: '/images/nuove/eventi/eventi11.jpg' },
+                    { src: '/images/nuove/eventi/eventi12.jpg' },
+                    { src: '/images/nuove/eventi/eventi13.jpg' },
+                    { src: '/images/nuove/eventi/eventi14.jpg' },
+                    { src: '/images/nuove/eventi/eventi15.jpg' }
+                ],
+                type: 'image',
+                gallery: { enabled: true },
+                mainClass: 'mfp-fade'
+            });
+        });
+
+        // Food Truck (partire da 01, escludere 00 di copertina)
+        $(document).off('click.openTruck');
+        $(document).on('click.openTruck', '.open-truck-gallery', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $.magnificPopup.open({
+                items: [
+                    { src: '/images/nuove/truck/truck01.jpg' },
+                    { src: '/images/nuove/truck/truck02.jpg' },
+                    { src: '/images/nuove/truck/truck03.jpg' },
+                    { src: '/images/nuove/truck/truck04.jpg' },
+                    { src: '/images/nuove/truck/truck05.jpg' },
+                    { src: '/images/nuove/truck/truck06.jpg' },
+                    { src: '/images/nuove/truck/truck07.jpg' }
                 ],
                 type: 'image',
                 gallery: { enabled: true },

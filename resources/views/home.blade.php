@@ -233,8 +233,8 @@
                     <div class="wrap-image">
                         <div class="image">
                             <img class="lazyload" 
-                                 data-src="{{ asset('images/nuove/dada.jpg') }}"
-                                 src="{{ asset('images/nuove/dada.jpg') }}" 
+                                 data-src="{{ asset('images/nuove/prodotti.jpg') }}"
+                                 src="{{ asset('images/nuove/prodotti.jpg') }}" 
                                  alt="Sicurezza Alimentare" />
                         </div>
                        {{--  <div class="item1 wow rotateIn" data-wow-duration="2s">
@@ -326,6 +326,7 @@
                     </div>
                 </div>
                 
+                @if(false)
                 @forelse($products as $index => $product)
                 <div class="col-lg-4 col-sm-6">
                     <div class="product-item wow fadeInUp" data-wow-delay="{{ $index * 0.1 }}s">
@@ -391,6 +392,14 @@
                     </p>
                 </div>
                 @endforelse
+                @endif
+
+                <div class="col-12">
+                    <div class="product-item wow fadeInUp" style="text-align: center; padding: 40px; background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 12px;">
+                        <h3 style="margin-bottom: 10px;">Prossimamente in vendita</h3>
+                        <p style="margin: 0;">Stiamo preparando alcuni prodotti che saranno disponibili online. Torna a trovarci!</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -419,13 +428,29 @@
                 height: 100%;
                 object-fit: cover;
             }
+            /* Forza 5 colonne visibili nello slider servizi su desktop larghi */
+            @media (min-width: 1280px) {
+                .slide-layout-4 .swiper-slide {
+                    width: 20% !important; /* 5 colonne */
+                    margin-right: 0 !important; /* evita overflow dato dallo spaceBetween */
+                }
+                /* Evita lo "slittamento": nessuna trasformazione del wrapper e cursore normale */
+                .slide-layout-4 .swiper-wrapper {
+                    transform: none !important;
+                    transition: none !important;
+                }
+                .slide-layout-4 .swiper-container,
+                .slide-layout-4 .swiper-wrapper {
+                    cursor: default !important;
+                }
+            }
         </style>
         
         <div class="wrap-service-item">
             <div class="swiper-container slide-layout-4 mb-0">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="service-item wow fadeInUp swiper-no-swiping" data-gallery="catering" role="button" aria-label="Apri galleria Catering">
+                        <div class="service-item wow fadeInUp" data-gallery="catering">
                             <div class="wrap-image">
                                 <img class="lazyload" 
                                      data-src="{{ asset('images/nuove/buffet.jpg') }}"
@@ -440,11 +465,16 @@
                                 <p>
                                     Buffet e banchetti per matrimoni,<br>cerimonie e eventi aziendali.
                                 </p>
+                                <p style="margin-top: 10px;">
+                                    <a href="#" class="open-catering-gallery" style="font-weight: 600; text-decoration: underline;">
+                                        Guarda la gallery
+                                    </a>
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="service-item wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item wow fadeInUp" data-wow-delay="0.1s" data-gallery="streetfood">
                             <div class="wrap-image">
                                 <img class="lazyload" 
                                      data-src="{{ asset('images/nuove/street_food.jpg') }}"
@@ -459,15 +489,20 @@
                                 <p>
                                     Il nostro food truck porta la tradizione<br>emiliana nelle piazze e mercati.
                                 </p>
+                                <p style="margin-top: 10px;">
+                                    <a href="#" class="open-streetfood-gallery" style="font-weight: 600; text-decoration: underline;">
+                                        Guarda la gallery
+                                    </a>
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item wow fadeInUp" data-wow-delay="0.2s" data-gallery="sagre">
                             <div class="wrap-image">
                                 <img class="lazyload" 
-                                     data-src="{{ asset('images/nuove/sagre.jpg') }}"
-                                     src="{{ asset('images/nuove/sagre.jpg') }}" 
+                                     data-src="{{ asset('images/nuove/sagre/sagra4.jpg') }}"
+                                     src="{{ asset('images/nuove/sagre/sagra4.jpg') }}" 
                                      alt="Sagre" />
                             </div>
                             <div class="content">
@@ -478,15 +513,20 @@
                                 <p>
                                     Presenti alle sagre locali con tortelli,<br>gnocco fritto e specialità tipiche.
                                 </p>
+                                <p style="margin-top: 10px;">
+                                    <a href="#" class="open-sagre-gallery" style="font-weight: 600; text-decoration: underline;">
+                                        Guarda la gallery
+                                    </a>
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="service-item wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item wow fadeInUp" data-wow-delay="0.3s" data-gallery="eventi">
                             <div class="wrap-image">
                                 <img class="lazyload" 
-                                     data-src="{{ asset('images/nuove/eventi.jpg') }}"
-                                     src="{{ asset('images/nuove/eventi.jpg') }}" 
+                                     data-src="{{ asset('images/nuove/eventi/eventi7.jpg') }}"
+                                     src="{{ asset('images/nuove/eventi/eventi7.jpg') }}" 
                                      alt="Eventi" />
                             </div>
                             <div class="content">
@@ -496,6 +536,35 @@
                                 <h2>EVENTI</h2>
                                 <p>
                                     Feste private, compleanni e ricorrenze<br>con menù personalizzati su richiesta.
+                                </p>
+                                <p style="margin-top: 10px;">
+                                    <a href="#" class="open-eventi-gallery" style="font-weight: 600; text-decoration: underline;">
+                                        Guarda la gallery
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-item wow fadeInUp" data-wow-delay="0.4s" data-gallery="truck">
+                            <div class="wrap-image">
+                                <img class="lazyload" 
+                                     data-src="{{ asset('images/nuove/truck/truck00.jpg') }}"
+                                     src="{{ asset('images/nuove/truck/truck00.jpg') }}" 
+                                     alt="Food Truck" />
+                            </div>
+                            <div class="content">
+                                <div class="icon">
+                                    <i class="icon-shopping-bag"></i>
+                                </div>
+                                <h2>FOOD TRUCK</h2>
+                                <p>
+                                    Il nostro truck porta i sapori emiliani<br>direttamente ai tuoi eventi.
+                                </p>
+                                <p style="margin-top: 10px;">
+                                    <a href="#" class="open-truck-gallery" style="font-weight: 600; text-decoration: underline;">
+                                        Guarda la gallery
+                                    </a>
                                 </p>
                             </div>
                         </div>
@@ -524,12 +593,7 @@
                 </div>
             </div>
         </div>
-        <div class="wrap-image">
-            <img class="lazyload" 
-                 data-src="{{ asset('images/nuove/adriano.png') }}"
-                 src="{{ asset('images/nuove/adriano.png') }}" 
-                 alt="Il nostro team" />
-        </div>
+       
         <div class="wrap-image">
             <img class="lazyload" 
                  data-src="{{ asset('images/nuove/staff.jpg') }}"
@@ -538,10 +602,17 @@
         </div>
         <div class="wrap-image">
             <img class="lazyload" 
+                 data-src="{{ asset('images/nuove/team02.jpg') }}"
+                 src="{{ asset('images/nuove/team02.jpg') }}" 
+                 alt="Il nostro team" />
+        </div>
+        <div class="wrap-image">
+            <img class="lazyload" 
                  data-src="{{ asset('images/nuove/staff1.jpg') }}"
                  src="{{ asset('images/nuove/staff1.jpg') }}" 
                  alt="Il nostro team" />
         </div>
+         
     </section>
 
     <!-- Section Location/Contact -->
