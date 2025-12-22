@@ -47,9 +47,6 @@
             </div>
         </div>
     </div>
-    <div class="image">
-        <img src="{{ asset('images/nuove/tortelli_reggiani.png') }}" alt="Tortelli Reggiani">
-    </div>
 </div>
 
 <!-- Main Content -->
