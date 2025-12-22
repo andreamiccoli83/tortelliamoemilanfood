@@ -69,26 +69,6 @@
                 </div>
             </div>
             
-            <style>
-                .pasta-grid-fix {
-                    display: grid !important;
-                    grid-template-columns: repeat(2, 1fr) !important;
-                    grid-template-rows: repeat(2, 1fr) !important;
-                    gap: 8px !important;
-                    height: 400px !important;
-                    width: 100% !important;
-                }
-                .pasta-grid-fix .pasta-grid-item {
-                    overflow: hidden;
-                    border-radius: 8px;
-                }
-                .pasta-grid-fix .pasta-grid-item img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            </style>
-            
             <!-- Layout 3 colonne -->
             <div class="row align-items-center justify-content-center">
                 <!-- Colonna 1: Griglia 4 foto (2x2) -->

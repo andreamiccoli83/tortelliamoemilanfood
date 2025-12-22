@@ -102,14 +102,17 @@ if ($(".slide-our-menu").length > 0) {
     var swiper = new Swiper(".slide-our-menu", {
         slidesPerView: 3,
         spaceBetween: 30,
+        loop: false,
+        autoplay: false,
         navigation: {
             nextEl: ".our-product-next",
             prevEl: ".our-product-prev",
         },
         breakpoints: {
             0: {
-                slidesPerView: 1.2,
-                spaceBetween: 15
+                slidesPerView: 1,
+                spaceBetween: 15,
+                centeredSlides: false
             },
             750: {
                 slidesPerView: 2.3,
@@ -120,7 +123,6 @@ if ($(".slide-our-menu").length > 0) {
         },
     });
 }
-
 
 if ($(".partner-slide").length > 0) {
     var swiper = new Swiper(".partner-slide", {
@@ -204,12 +206,17 @@ if ($(".slide-layout-4").length > 0) {
     var swiper = new Swiper(".slide-layout-4", {
         slidesPerView: 4,
         spaceBetween: 30,
+        loop: false,
+        autoplay: false,
         breakpoints: {
             0: {
-                slidesPerView: 1.2,
+                slidesPerView: 1,
+                spaceBetween: 15,
+                centeredSlides: false,
             },
             400: {
-                slidesPerView: 1.5,
+                slidesPerView: 1.3,
+                spaceBetween: 15,
             },
             767: {
                 slidesPerView: 2.5,

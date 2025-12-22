@@ -12,6 +12,134 @@ section[id] {
     scroll-margin-top: 180px;
 }
 
+/* Pasta Grid Fix - Griglia 2x2 per pasta fresca */
+.pasta-grid-fix {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(2, 1fr) !important;
+    gap: 8px !important;
+    height: 400px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.pasta-grid-fix .pasta-grid-item {
+    overflow: hidden;
+    border-radius: 8px;
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.pasta-grid-fix .pasta-grid-item img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 991px) {
+    /* 1. Pasta Fresca: aumenta distanza tra griglia 4 immagini e foto ad arco */
+    .pasta-grid-fix {
+        margin-bottom: 60px !important;
+        height: 350px !important;
+    }
+    
+    /* 2. Gastronomia: centra testo e ottimizza layout */
+    .section-our-menu .heading-section {
+        text-align: center !important;
+    }
+    
+    .section-our-menu .list-check {
+        text-align: left !important;
+        max-width: 500px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    
+    /* 3. Produttori Locali: centra tutto il contenuto e Adriano */
+    .section-why .content {
+        text-align: center !important;
+    }
+    
+    .section-why .content .heading-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .section-why .content .list-check {
+        text-align: left !important;
+        max-width: 400px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    
+    .section-why .wrap-image {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    /* Aumenta ulteriormente la distanza su mobile piccolo */
+    .section-pasta-fresca .pasta-grid-fix {
+        margin-bottom: 80px !important;
+    }
+    
+    .section-pasta-fresca .wrap-image.left {
+        margin-bottom: 30px;
+    }
+    
+    /* Ottimizza griglia per mobile piccolo */
+    .pasta-grid-fix {
+        height: 280px !important;
+        gap: 6px !important;
+    }
+}
+
+/* 4. Servizi: slider mobile unico che scorre */
+@media (max-width: 991px) {
+    .section-our-product .slide-layout-4 {
+        overflow: visible !important;
+    }
+    
+    .section-our-product .service-item {
+        margin-bottom: 0 !important;
+    }
+    
+    /* Rendi le card servizi più compatte su mobile */
+    .section-our-product .service-item .content {
+        padding: 30px 20px !important;
+    }
+    
+    .section-our-product .service-item .content h2 {
+        font-size: 22px !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .section-our-product .service-item .content p {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+    }
+}
+
+@media (max-width: 575px) {
+    /* Su mobile piccolo, mostra 1 slide alla volta centrata */
+    .section-our-product .slide-layout-4 .swiper-slide {
+        width: 85% !important;
+        margin-right: 15px;
+    }
+    
+    .section-our-product .service-item .wrap-image {
+        height: 200px !important;
+    }
+    
+    .section-our-product .service-item .content {
+        padding: 25px 15px !important;
+    }
+}
+
 .tf-spacing-1 {
     padding-top: 0;
     padding-bottom: 130px;
