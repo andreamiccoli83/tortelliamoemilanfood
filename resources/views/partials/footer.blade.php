@@ -34,7 +34,6 @@
                                 <li>Lun - Ven: 9:00 - 14:00, 16:00 - 20:00</li>
                                 <li>Sab: 9:00 - 14:00, 16:00 - 20:00</li>
                                 <li>Dom: 9:00 - 14:00</li>
-                                <li>Festivi: Chiuso</li>
                             </ul>
                         </div>
                     </div>

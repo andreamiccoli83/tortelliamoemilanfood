@@ -527,6 +527,29 @@
         }
     };
 
+    // Scroll to Top Button
+    var scrollTopButton = function () {
+        var scrollTopBtn = $("#scroll-top");
+        if (scrollTopBtn.length > 0) {
+            var offset = 300;
+            var duration = 400;
+            
+            $(window).on("scroll", function () {
+                if ($(this).scrollTop() > offset) {
+                    scrollTopBtn.addClass("show");
+                } else {
+                    scrollTopBtn.removeClass("show");
+                }
+            });
+            
+            scrollTopBtn.on("click", function (event) {
+                event.preventDefault();
+                $("html, body").animate({ scrollTop: 0 }, duration);
+                return false;
+            });
+        }
+    };
+
     // Dom Ready
     $(function () {
         preloader();
@@ -543,5 +566,6 @@
         infiniteScroll();
         serviceGallery();
         goTop();
+        scrollTopButton();
     });
 })(jQuery);

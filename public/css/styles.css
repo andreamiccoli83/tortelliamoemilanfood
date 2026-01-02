@@ -5870,6 +5870,95 @@ a.mapboxgl-ctrl-logo {
     margin-bottom: 5px;
 }
 
+/* Scroll to Top Button */
+#scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--Primary);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#scroll-top:hover {
+    background-color: #c49b63;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+#scroll-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#scroll-top i {
+    font-size: 20px;
+}
+
+/* Social Icons - Header e Footer */
+.list-sosial li a,
+.tf-social-icon li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    color: inherit;
+}
+
+.list-sosial li a:hover,
+.tf-social-icon li a:hover {
+    background-color: var(--Primary);
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.list-sosial li a i,
+.tf-social-icon li a i {
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Footer social icons specifico */
+.footer .tf-social-icon li a {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.footer .tf-social-icon li a:hover {
+    background-color: var(--Primary);
+    color: #fff;
+}
+
+/* Footer links - telefono e email in bianco */
+.footer a,
+.footer a:visited {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--Primary);
+}
+
+.footer .footer-menu-list a {
+    color: #fff;
+}
+
 /* Mobile Info Section in Menu */
 .mobile-info-section {
     padding: 20px 30px;
@@ -5920,6 +6009,15 @@ a.mapboxgl-ctrl-logo {
     line-height: 1.5;
 }
 
+/* Sezione I Nostri Prodotti - Layout Desktop */
+.section-why .wrap-image {
+    margin-bottom: 0;
+}
+
+.section-why .counter {
+    margin-top: 50px;
+}
+
 /* Mobile Optimizations */
 @media (max-width: 991px) {
     /* Nascondi top bar su mobile */
@@ -5940,6 +6038,16 @@ a.mapboxgl-ctrl-logo {
     .service-item .content h2 {
         font-size: 20px;
         margin-bottom: 12px;
+    }
+    
+    /* Sezione I Nostri Prodotti - Mobile */
+    .section-why .wrap-image {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    
+    .section-why .counter {
+        margin-top: 40px;
     }
     
     .pasta-grid-fix {

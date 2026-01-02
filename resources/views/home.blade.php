@@ -139,7 +139,7 @@
     </section>
 
     <!-- Section Our Menu/Products -->
-    <section id="prodotti" class="section-our-menu tf-spacing-3">
+    <section id="prodotti" class="section-our-menu tf-spacing-3" style="background-color: #f8f5f0;">
         <div class="tf-container">
             <div class="row">
                 <div class="col-12">
@@ -221,10 +221,23 @@
     </section>
 
     <!-- Section Why Choose Us -->
-    <section class="section-why tf-spacing-18 pt-0">
+    <section class="section-why tf-spacing-18">
         <div class="tf-container">
-            <div class="row">
-                <div class="col-12">
+            <div class="row align-items-center">
+                <!-- Immagine a sinistra su desktop -->
+                <div class="col-lg-6 order-lg-1 order-2">
+                    <div class="wrap-image wow fadeInLeft">
+                        <div class="image">
+                            <img class="lazyload" 
+                                 data-src="{{ asset('images/nuove/prodotti.jpg') }}"
+                                 src="{{ asset('images/nuove/prodotti.jpg') }}" 
+                                 alt="I nostri prodotti" />
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contenuto a destra su desktop -->
+                <div class="col-lg-6 order-lg-2 order-1">
                     <div class="content">
                         <div class="heading-section">
                             <img src="{{ asset('images/nuove/adriano_buono.png') }}" 
@@ -241,58 +254,54 @@
                         <ul class="list-check wow fadeInUp">
                             <li><i class="icon-check1"></i> Vini: lambrusco e birre artigianali</li>
                             <li><i class="icon-check1"></i> Sughi pronti per pasta</li>
-                            <li><i class="icon-check1"></i> Basi, giardiniere, composte e marmellate</li>
+                            <li><i class="icon-check1"></i> Vasi, giardiniere, composte e marmellate</li>
                             <li><i class="icon-check1"></i> Liquori artigianali</li>
                         </ul>
                     </div>
                 </div>
-                <div class="counter">
-                    <div class="row">
-                        <div class="col-md-3 col-6">
-                            <div class="number-counter">
-                                <div class="counter-content">
-                                    <span class="number" data-speed="2500" data-to="240" data-inviewport="yes">240</span>
-                                </div>
-                                <p>CLIENTI OGNI GIORNO</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6">
-                            <div class="number-counter">
-                                <div class="counter-content">
-                                    <span class="number" data-speed="2500" data-to="1450" data-inviewport="yes">1450</span>
-                                </div>
-                                <p>ORDINI CONSEGNATI</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6">
-                            <div class="number-counter">
-                                <div class="counter-content">
-                                    <span class="number" data-speed="2500" data-to="12" data-inviewport="yes">12</span>
-                                </div>
-                                <p>CERTIFICAZIONI E RICONOSCIMENTI</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6">
-                            <div class="number-counter last-child">
-                                <div class="counter-content">
-                                    <span class="number" data-speed="2500" data-to="3260" data-inviewport="yes">3260</span>
-                                </div>
-                                <p>CLIENTI SODDISFATTI</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12" style="margin-top: 40px;">
-                    <div class="wrap-image">
-                        <div class="image">
-                            <img class="lazyload" 
-                                 data-src="{{ asset('images/nuove/prodotti.jpg') }}"
-                                 src="{{ asset('images/nuove/prodotti.jpg') }}" 
-                                 alt="Sicurezza Alimentare" />
-                        </div>
-                    </div>
-                </div>
             </div>
+            
+            {{-- Counter sotto --}}
+            {{-- <div class="row">
+                <div class="col-12">
+                    <div class="counter">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="number-counter">
+                                    <div class="counter-content">
+                                        <span class="number" data-speed="2500" data-to="240" data-inviewport="yes">240</span>
+                                    </div>
+                                    <p>CLIENTI OGNI GIORNO</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="number-counter">
+                                    <div class="counter-content">
+                                        <span class="number" data-speed="2500" data-to="1450" data-inviewport="yes">1450</span>
+                                    </div>
+                                    <p>ORDINI CONSEGNATI</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="number-counter">
+                                    <div class="counter-content">
+                                        <span class="number" data-speed="2500" data-to="12" data-inviewport="yes">12</span>
+                                    </div>
+                                    <p>CERTIFICAZIONI E RICONOSCIMENTI</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="number-counter last-child">
+                                    <div class="counter-content">
+                                        <span class="number" data-speed="2500" data-to="3260" data-inviewport="yes">3260</span>
+                                    </div>
+                                    <p>CLIENTI SODDISFATTI</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> --}}
         </div>
         <div class="item2 wow fadeInRight" data-wow-delay="0.4s" data-wow-duration="3s">
             <img src="{{ asset('images/items/item-section-why-2.png') }}" alt="">
@@ -647,7 +656,7 @@
                         <p class="infor wow fadeInUp">
                             <a href="mailto:info@tortelliamo.it">info@tortelliamo.it</a>
                         </p>
-                        <p class="infor wow fadeInUp">Lun - Dom: 9:00 - 14:00, 16:00 - 20:00, Festivi: Chiuso</p>
+                        <p class="infor wow fadeInUp">Lun - Dom: 9:00 - 14:00, 16:00 - 20:00</p>
                     </div>
                     <a href="https://maps.google.com/?q=Piazza+Cesare+Battisti+3+Novellara" 
                        target="_blank" 

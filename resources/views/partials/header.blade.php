@@ -15,10 +15,9 @@
                         </li>
                     </ul>
                     <ul class="list-sosial">
-                        <li><i class="icon-facebook"></i></li>
-                        <li><i class="icon-twitter"></i></li>
-                        <li><i class="icon-instagram2"></i></li>
-                        <li><i class="icon-tiktok"></i></li>
+                        <li><a href="https://www.facebook.com/TortelliAmoFoodLab/" target="_blank" rel="noopener"><i class="icon-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/tortelliamoemilianfood/" target="_blank" rel="noopener"><i class="icon-instagram2"></i></a></li>
+                        <li><a href="https://www.tripadvisor.it/Restaurant_Review-g1785702-d28254988-Reviews-Tortelliamo-Novellara_Province_of_Reggio_Emilia_Emilia_Romagna.html?m=69573" target="_blank" rel="noopener"><i class="icon-trip"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -146,9 +145,9 @@
             </nav>
             <div class="mobile-footer">
                 <ul class="tf-social-icon">
-                    <li><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="icon-instagram2"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="icon-tiktok"></i></a></li>
+                    <li><a href="https://www.facebook.com/TortelliAmoFoodLab/" target="_blank" rel="noopener"><i class="icon-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/tortelliamoemilianfood/" target="_blank" rel="noopener"><i class="icon-instagram2"></i></a></li>
+                    <li><a href="https://www.tripadvisor.it/Restaurant_Review-g1785702-d28254988-Reviews-Tortelliamo-Novellara_Province_of_Reggio_Emilia_Emilia_Romagna.html?m=69573" target="_blank" rel="noopener"><i class="icon-trip"></i></a></li>
                 </ul>
             </div>
         </div>
